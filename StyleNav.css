@@ -1,0 +1,46 @@
+.parent{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 3px solid rgba(235,229,229,.95);
+}
+
+.divNav{ 
+  grid-area: 1 / 1 / 3 / 7; 
+  background: var(--Eerie-black);
+  min-height: 64px; 
+}
+
+.divLogo{ 
+  grid-area: 1 / 1 / 3 / 3; 
+  background: var(--Eerie-black);
+  background: transparent; 
+  display:flex; 
+  align-items:center; 
+  padding-left:12px;
+}
+.logo-img{
+  height:45px;          
+  width:auto;
+  object-fit:contain;
+}
+
+.divHambureger{
+  grid-area:1 / 5 / 3 / 7;
+  background:var(--Eerie-black);
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding-right:12px;
+}
+.divHambureger i{
+  font-size:40px;
+  color:#fff;
+  line-height:1;
+}
+
+
+
+

@@ -10,4 +10,4 @@ class Fardigheter extends HTMLElement {
     </div>`;
   }
 }
-customElements.define('fardigheter-cmp', Navbar);
+customElements.define('fardigheter-cmp', Fardigheter);

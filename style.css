@@ -10,5 +10,6 @@
   --Persian-red: #d33b31;
 }
 body {
+    background-color: var(--Eerie-black);
     font-family: "Montserrat", sans-serif;
 }

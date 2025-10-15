@@ -1,0 +1,31 @@
+/* Responsive design with media queries */
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .assessment {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .assessment h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}
+

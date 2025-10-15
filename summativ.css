@@ -1,0 +1,46 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+} */
+
+.summativ {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underline {
+    border-bottom: 2px solid gold;
+}
+
+.grid-summativ {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+}
+
+
+.summativ-layout{
+    display: grid;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+
+#summativ01 {
+    background-color: #ED6B66;
+    
+}
+
+#summativ02 {
+    background-color: #6EC97B;
+
+}
+
+#summativ03 {
+    background-color: #F6D046;
+}

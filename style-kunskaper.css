@@ -1,0 +1,77 @@
+main {
+    background-color: #1E2024;
+}
+
+.kunskaper {
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.kunskaper img {
+    width: 30vw;
+    display: block;
+
+}
+
+.kunskaper i {
+    font-size: 2.5rem;
+}
+
+.kunskaper h2 {
+    font-size: 2rem;
+}
+
+.kunskaper h3 {
+    font-size: 1.5rem;
+}
+
+
+/* KUNSKAPER CARDS */
+
+.bigCardPurple, .bigCardGreen, .bigCardPink, .bigCardOrange {
+    display: none;
+}
+
+.kunskaperCards {
+    width: 90vw;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 5vw;
+}
+
+.kunskaperCards p {
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+    font-weight: 750;
+    letter-spacing: 0.05rem;
+}
+
+.kunskaperCards .card {
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardPurple {
+    background-color: var(--Chrysler-blue);
+}
+
+.cardGreen {
+    background-color: var(--Emerald);
+}
+
+.cardPink {
+    background-color: var(--Bittersweet);
+}
+
+.cardOrange {
+    background-color: var(--Tangerine);
+}
+

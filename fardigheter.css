@@ -1,0 +1,44 @@
+.section-fardigheter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  color: white;
+}
+
+.title-fardigheter {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.wrapper-fardigheter {
+  width: 90vw;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 5vw;
+}
+
+.box-fardigheter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  font-weight: bolder;
+}
+
+.yellow-fardigheter {
+  background-color: var(--Mustard);
+}
+
+.blue-fardigheter {
+  background-color: var(--Blue-gray);
+}
+
+.green-fardigheter {
+  background-color: var(--Emerald);
+}
+
+.red-fardigheter {
+  background-color: var(--Persian-red);
+}

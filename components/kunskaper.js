@@ -7,17 +7,20 @@ class Kunskaper extends HTMLElement {
 
             <img class="kunskaperLogo" src="images/chas-academy-logo.png" alt="ChasAcademy logo">
             <i class="ri-poker-hearts-line"></i>
-            <h2>LÄRANDEMÅL</h2>
-            <p>Vid avslutad kurs med godkända resultat, kan den studerande:</p>
+            <div class="kunskaperContainer">
+                <h2>LÄRANDEMÅL</h2>
+                <p>Vid avslutad kurs med godkända resultat, kan den studerande:</p>
+            </div>
             <h3>KUNSKAPER</h3>
 
             <!-- START: CARDS KUNSKAPER - "kunskaperCards" -->
             <div class="kunskaperCards">
                 <!-- PURPLE CARD - "cardPurple" "bigCardPurple" -->
-                <div class="cardPurple card">
+                <div class="cardPurple card purple">
                     <p>Javascript & Interaktivitet</p>
                 </div>
-                <div class="bigCardPurple">
+                <div class="bigCardPurple bigCard purple">
+                    <h5>Javascript & Interaktivitet</h5>
                     <ul>
                         <li>Beskriva hur eventhantering används för att skapa interaktiva webbapplikationer</li>
                         <li>Förklara hur API:er används för att hämta och manipulera data</li>

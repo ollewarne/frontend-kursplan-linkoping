@@ -7,9 +7,10 @@ main {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
+
+
 
 .kunskaper img {
     width: 30vw;
@@ -18,15 +19,32 @@ main {
 }
 
 .kunskaper i {
-    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3rem;
+}
+
+
+.kunskaperContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .kunskaper h2 {
     font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.kunskaperContainer p {
+    font-size: 0.9rem;
+    margin-top: 0;
 }
 
 .kunskaper h3 {
     font-size: 1.5rem;
+    margin-bottom: 2%;
 }
 
 
@@ -52,26 +70,61 @@ main {
     letter-spacing: 0.05rem;
 }
 
+.kunskaperCards li {
+    padding-top: 5%;
+}
+
+.kunskaperCards h5 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 .kunskaperCards .card {
-    border-radius: 10%;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cardPurple {
+
+/* DEN HÄR KODEN FÖRSTÖR LAYOUTEN i GRID */
+
+/* .kunskaperCards .bigCard {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.kunskaperCards .purple {
     background-color: var(--Chrysler-blue);
+}
+
+.cardPurple {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.bigCardPurple {
+    grid-area: 1 / 1 / span 2 / span 2;
+    display: none;
+    z-index: 1; 
+        /* z-index: 1; --- addera i js vid klick*/
 }
 
 .cardGreen {
     background-color: var(--Emerald);
+    grid-area: 1 / 2 / span 1 / span 1;
 }
 
 .cardPink {
     background-color: var(--Bittersweet);
+    grid-area: 2 / 1 / span 1 / span 1;
+
 }
 
 .cardOrange {
     background-color: var(--Tangerine);
+    grid-area: 2 / 2 / span 1 / span 1;
 }
 

@@ -33,6 +33,7 @@ body {
 .level {
   padding: 16px 0;
   border-top: 1px solid #e0e0e0;
+  text-align: center;
 }
 
 /* ICONS */
@@ -69,4 +70,6 @@ ul {
   color: #0b0b0b;
   line-height: 1.4;
 }
+
+
 

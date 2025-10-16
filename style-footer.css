@@ -1,0 +1,106 @@
+
+/* ====== Enkel footer-stil (style-footer.css) ====== */
+:root{
+  --footer-bg: var(--Eerie-black, #0f1220);
+  --footer-fg: #eef2ff;
+  --footer-muted: #a5b4fc;
+  --footer-border-strong: rgba(235,229,229,.95);
+  --footer-border-soft: rgba(255,255,255,0.08);
+}
+
+/* Vanliga <footer>-taggen (bilden i slutet av sidan) */
+footer{
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+  border-top: 1px solid var(--footer-border-soft);
+  margin-top: 2rem;
+  padding: 1.25rem 12px;
+}
+footer img{
+  display:block;
+  margin:0 auto;
+  max-width:min(100%,220px);
+  height:auto;
+  border-radius:8px;
+  outline:1px solid var(--footer-border-soft);
+}
+
+/* ------- Footer-nav som skapas av footer.js ------- */
+/* <nav class="parent">
+     <div class="divFooter"></div>
+     <div><img class="logo-img"></div>
+     <div class="divFooter"><i></i></div>
+   </nav>
+*/
+.parent{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows:repeat(2,auto);
+  background:var(--footer-bg);
+  border-bottom:3px solid var(--footer-border-strong);
+  min-height:64px;
+}
+
+/* Vänster block (kol 1–3) */
+.parent > .divFooter:first-child{
+  grid-area:1 / 1 / 3 / 3;
+  display:flex;
+  align-items:center;
+  padding-left:12px;
+  color:var(--footer-muted);
+}
+
+/* Mitten (kol 3–5) – logotyp */
+.parent > :nth-child(2){
+  grid-area:1 / 3 / 3 / 5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+}
+
+/* Höger block (kol 5–7) */
+.parent > .divFooter:last-child{
+  grid-area:1 / 5 / 3 / 7;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding-right:12px;
+  color:var(--footer-muted);
+}
+
+/* Ikon i höger block */
+.parent .divFooter:last-child i{
+  font-size:40px;
+  color:#fff;
+  line-height:1;
+}
+
+/* Logotypen */
+.logo-img{
+  display:block;
+  height:45px;
+  width:auto;
+  object-fit:contain;
+}
+
+/* Responsivt */
+@media (max-width:640px){
+  .parent > .divFooter:first-child{ padding-left:8px; }
+  .parent > .divFooter:last-child{  padding-right:8px; }
+  .logo-img{ height:40px; }
+}
+
+/* Tillgängligt fokus */
+.parent :where(a,button,img),
+footer img{
+  outline: none;
+}
+.parent :where(a,button,img):focus-visible,
+footer img:focus-visible{
+  outline:2px solid #6366f1;
+  outline-offset:2px;
+  border-radius:6px;
+}

@@ -5,19 +5,19 @@ class BedomningSection extends HTMLElement {
         <h2>BEDÖMNING</h2>
 
         <article class="level">
-          <div class="icon warning">⚠️</div>
+          <div class="icon warning"><i class="ri-error-warning-line"></i></div>
           <h3>Inte Godkänd (IG)</h3>
           <p>Alla lärandemål är inte uppfyllda.</p>
         </article>
 
         <article class="level">
-          <div class="icon success">✅</div>
+          <div class="icon success"><i class="ri-checkbox-circle-fill"></i></div>
           <h3>Godkänd (C)</h3>
           <p>Alla lärandemål är uppfyllda på en tillfredsställande nivå.</p>
         </article>
 
         <article class="level">
-          <div class="icon gold">🏆</div>
+          <div class="icon trophy"><i class="ri-medal-line"></i></div>
           <h3>Väl Godkänd (VG)</h3>
           <p>
             Alla lärandemål är uppfyllda på en tillfredsställande nivå.<br />

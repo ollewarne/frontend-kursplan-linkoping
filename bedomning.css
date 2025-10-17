@@ -1,0 +1,68 @@
+/* Styling for bedomning section */
+
+.assessment .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+}
+
+/* Icon symbols inside the circle */
+.assessment .icon i {
+  font-size: 28px;
+}
+
+/* Title */
+.assessment h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  color: var(--Dark-gray);
+}
+
+/* level section styles */
+
+.assessment .level {
+  padding: 16px 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.assessment .level:first-of-type {
+  border-top: none;
+}
+
+
+/* Colors ONLY for the icon inside */
+.assessment .warning {
+  background-color: #d33b31;
+}
+
+
+.assessment .success {
+  background-color: #f6d046;
+}
+
+.assessment .trophy {
+  background-color: #6EC97B
+}
+
+/* Inside sections and text styling */
+
+.assessment ul {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+
+
+

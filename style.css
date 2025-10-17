@@ -13,63 +13,23 @@ body {
   padding: 20px;
 }
 
-/* CONTAINER */
-.assessment {
+/* Geneal styling for all sections */
+
+section {
   width: 100%;
   max-width: 400px;
   padding: 24px;
- 
 }
 
-/* TITLE */
-.assessment h2 {
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 24px;
-  letter-spacing: 0.5px;
-}
-
-/* LEVELING BLOCKS */
-.level {
-  padding: 16px 0;
-  border-top: 1px solid #e0e0e0;
-  text-align: center;
-}
-
-/* ICONS */
-.icon {
-  font-size: 28px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-/* COLOR THEMES */
-.warning {
-  color: #ff5b2e;
-}
-
-.success {
-  color: #00b060;
-}
-
-.gold {
-  color: #d4af37;
-}
-
+/* tests and list defult stylings */
 p {
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #444;
 }
 
-/* LIST */
 ul {
-  margin-top: 10px;
+    margin-top: 10px;
   margin-left: 20px;
   font-size: 0.9rem;
-  color: #0b0b0b;
   line-height: 1.4;
 }
-
-
-

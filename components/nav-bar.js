@@ -1,7 +1,7 @@
 class NavBar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <nav class="parent">
+      <nav class="parent-Nav">
         <div class="divNav"></div>
         <div class="divLogo">
           <img src="images/chas-academy-logo.png" alt="Chas Academy" class="logo-img">

@@ -19,11 +19,29 @@
   gap: 5vw;
 }
 
+.box-fardigheter > i {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: var(--Eerie-black);
+  opacity: 0.7;
+}
+
+.big-box > i {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--Eerie-black);
+}
+
 .box-fardigheter, .big-box {
   cursor: pointer;
 }
 
 .box-fardigheter {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +50,7 @@
 }
 
 .big-box {
+  position: relative;
   display: none;
   justify-content: center;
   align-items: center;
@@ -53,7 +72,11 @@
   font-weight: 600;
 }
 .list-fardigheter > li {
-  padding: 1em 0;
+  padding: .5em .5em;
+}
+
+.kvalitet-box > .list-fardigheter {
+  font-size: 1.1rem;
 }
 
 .yellow-fardigheter {

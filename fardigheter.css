@@ -19,12 +19,41 @@
   gap: 5vw;
 }
 
+.box-fardigheter, .big-box {
+  cursor: pointer;
+}
+
 .box-fardigheter {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10%;
   font-weight: bolder;
+}
+
+.big-box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 90vw;
+  height: 90vw;
+  border-radius: 5%;
+}
+
+#big-box1.visible, #big-box2.visible, #big-box3.visible, #big-box4.visible {
+  display: flex;
+}
+
+.list-fardigheter {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.list-fardigheter > li {
+  padding: 1em 0;
 }
 
 .yellow-fardigheter {

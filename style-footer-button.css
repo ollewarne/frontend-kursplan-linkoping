@@ -1,0 +1,25 @@
+.foot-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+  margin-top: 15px;
+}
+.button {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ef8a17;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  transform: translateY(-3px); /* När musen hovrar: flytta knappen uppåt 3px */
+}
+
+.button:active {
+  transform: translateY(0); /* När knappen klickas: flytta tillbaka till ursprungsläge */
+}

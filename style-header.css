@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  color: #ef8a17;
+  text-decoration: none;
+ font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: large;
+
+}
+.container a{
+  color: #ef8a17;
+  text-decoration: none;
+
+}
+.container a:hover{
+  text-decoration: underline;
+}
+@media (max-width: 768px){
+  .container{
+display: none;
+  }
+}

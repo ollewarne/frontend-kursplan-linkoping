@@ -66,6 +66,21 @@ footer img{
   line-height: 1.55;
 }
 
+.dot-row {
+  text-align: center;   
+  font-size: 80px;      
+  letter-spacing: 1px; 
+  margin: 20px 0;      
+}
+
+
+.yellow { color: #FFF066; }
+.pink   { color: #FF69B4}
+.purple { color:  #8B00FF;}
+.blue   { color: #6495ED;}   
+.red    { color: red; }
+.orange { color: orange; }
+.green  { color: rgb(78, 213, 175); }  
 
 
 
@@ -100,26 +115,15 @@ footer img{
 .s1 {
   text-align: center;
   color: whitesmoke;
-  margin-bottom: 30px; /* lägger luft under artikeln */
+  margin-bottom: 30px; 
 }
 
 .a1 {
   text-align: center;
   color: whitesmoke;
-  margin-bottom: 30px; /* lägger luft under artikeln */
+  margin-bottom: 30px; 
 }
 
-.a1 .h1 {
-  font-size: 1.6rem;
-}
-
-.a1 .h2 {
-  font-size: 1.6rem;
-}
-
-.a1 .p1 {
-  line-height: 1.5;
-}
 
 .linje {
   height: 2px;

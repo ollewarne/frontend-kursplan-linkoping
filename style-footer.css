@@ -70,19 +70,27 @@ footer img{
   text-align: center;   
   font-size: 80px;      
   letter-spacing: 1px; 
-  margin: 20px 0;      
+  margin: 20px 0;  
+   
+    color: var(  --Chrysler-blue);  
+    color: var(--Emerald); 
+    color: var( --Bittersweet); 
+    color: var( --Blue-gray); 
+    color: var( --Eerie-black); 
+    color: var(--Mustard); 
+    color: var(--Tangerine); 
+    color: var(--Persian-red); 
+    color: var(--White);  
 }
-
-
-.yellow { color: #FFF066; }
-.pink   { color: #FF69B4}
-.purple { color:  #8B00FF;}
-.blue   { color: #6495ED;}   
-.red    { color: red; }
-.orange { color: orange; }
-.green  { color: rgb(78, 213, 175); }  
-
-
+.yellow { color: #f6d046;}
+.pink   { color: #FF69B4; }
+.purple { color: #9510E0; }
+.blue   { color: #57a0f2;} 
+.red    { color: #d33b31; }
+.orange { color: #ef8a17;}
+.green  { color: #6ec97b; } 
+.white  { color: #ffffff; }
+.black  { color: #1e2024; }
 
 .ss-namespace .linje {
   height: 2px;

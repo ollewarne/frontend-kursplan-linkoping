@@ -1,7 +1,7 @@
 class BedomningSection extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <section class="assessment">
+      <section class="assessment" id="bedomning">
         <h2>BEDÖMNING</h2>
 
         <article class="level">

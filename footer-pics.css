@@ -1,12 +1,4 @@
- body {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    background-color: black;
-    color: white;
-} 
-
-.footer-pics {
+ .footer-pics {
     width: 375px;
     justify-content: center;
     flex-direction: row;

@@ -19,7 +19,7 @@
 `<i class="ri-checkbox-circle-line"></i>`
 
 ### VG (MEDAL)
-`<i class="ri-medal-line"></i>`
+`<i class="ri-medal-fill"></i>`
 
 ### PLUS
 `<i class="ri-add-line"></i>`

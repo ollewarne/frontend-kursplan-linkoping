@@ -1,0 +1,42 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+} */
+
+.formativ {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+}
+
+.underline {
+    border-bottom: 2px solid var(--Mustard);
+}
+
+.formative-grid{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+
+.formativ-layout{
+    display: grid;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#formative01 {
+    background-color: var(--Chrysler-blue);
+    
+}
+
+#formative02 {
+    background-color: var(--Persian-red);
+
+}

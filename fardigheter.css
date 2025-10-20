@@ -27,6 +27,7 @@
   right: 0.5rem;
   color: var(--Eerie-black);
   opacity: 0.7;
+  font-weight: 600;
 }
 
 .fardigheter-big-box > i {
@@ -35,6 +36,7 @@
   right: 0.5rem;
   font-size: 1.5rem;
   color: var(--Eerie-black);
+  font-weight: 600;
 }
 
 .box-fardigheter, .fardigheter-big-box {

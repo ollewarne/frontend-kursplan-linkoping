@@ -3,13 +3,14 @@ Click [HERE](https://ollewarne.github.io/frontend-kursplan-linkoping/) to view t
 
 ## Who are we?
 
-- Mattias
-- Delzar
-- Malsha
-- Twana
-- Olle - Responsible for git
-- Mårten
 - Ingrid - Scrum Master
+- Olle - Responsible for git
+- Delzar - Designleads
+- Malsha - Designleads
+- Mattias - Developer
+- Mårten - Developer
+- Twana - Developer
+
 
 ## Goals for this project
 - Deliver a page to Chasacademy about their courseplan in Frontend.
@@ -32,3 +33,6 @@ These are the colors we use on the page.
 | Tangerine     | `#ef8a17` |
 | Persian red   | `#d33b31` |
 | White         | `#ffffff` |
+
+Below is a picture of the colors we chose to use for the design.  
+![color palette for the page](./images/colorpalette.png)

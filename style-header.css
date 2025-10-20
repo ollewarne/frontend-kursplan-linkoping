@@ -27,21 +27,23 @@
   background-color: var(--Emerald);
 } 
 
-.header-intro .colored-dots div{
-  width: 5vw;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  margin: 2%;
-}
-
 .header-intro .colored-dots {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 45vw;
   justify-content: center;
-  margin-top: 10%;
+  margin: auto;
+  padding-top: 10%;
 }
 
+.header-intro .colored-dots div{
+  width: 3vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* TEXT */
 
 .header-intro h1 {
   font-size: 2.5rem;

@@ -1,0 +1,55 @@
+ body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+} 
+
+.footer-pics {
+    width: 375px;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.footer-pics div {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 100%;
+}
+
+/* Låser storlek på bilder  */
+.footer-size {
+    max-width: 10px;
+    max-height: 10px;
+} 
+
+#row1-01 {
+    background-color: var(--Tangerine);
+    opacity: 0.5;
+}
+#row1-02 {
+    background-color: var(--Emerald);
+    opacity: 0.5;
+}
+#row1-03 {
+    background-color: var(--Bittersweet);
+    opacity: 0.5;
+}
+#row1-04 {
+    background-color: var(--Blue-gray);
+    opacity: 0.5;
+}
+#row2-01 {
+    background-color: var(--Chrysler-blue);
+    opacity: 0.5;
+}
+#row2-02 {
+    background-color: var(--Mustard);
+    opacity: 0.5;
+}
+#row2-03 {
+    background-color: var(--Persian-red);
+    opacity: 0.5;
+}

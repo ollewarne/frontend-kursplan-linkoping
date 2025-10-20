@@ -16,7 +16,7 @@ class Kunskaper extends HTMLElement {
             <div class="kunskaperCards">
 
                 <!-- PURPLE CARD -->
-                <div id="purpleCard" class="cardPurple card purple">
+                <div id="purpleCard" class="cardPurple card">
                     <i class="ri-add-line"></i>
                     <p>Javascript & Interaktivitet</p>
                 </div>

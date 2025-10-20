@@ -6,7 +6,7 @@ class Kunskaper extends HTMLElement {
 
             <img class="kunskaperLogo" src="images/chas-academy-logo.png" alt="ChasAcademy logo">
             <i class="ri-poker-hearts-line"></i>
-            <div class="kunskaperContainer">
+            <div id="larandemal" class="kunskaperContainer">
                 <h2>LÄRANDEMÅL</h2>
                 <p>Vid avslutad kurs med godkända resultat, kan den studerande:</p>
             </div>

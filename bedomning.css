@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+}
+
+:root {
+  --Persian-red: #d33b31;
+  --Emerald: #6ec97b;
+  --Mustard: #f6d046;
+  --Light-gray: #f5f5f5;
+  --Dark-gray: #222;
+}
+
+/* Bedomning Section */
+
+.assessment {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+/* Styling icons for bedomning section */
+
+.assessment .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+}
+
+/* Icon symbols inside the circle */
+.assessment .icon i {
+  font-size: 30px;
+}
+
+/* Title */
+.assessment h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  color: var(--Dark-gray);
+}
+
+/* level blocks section styles */
+
+.assessment .level {
+  padding: 16px 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.assessment .level:first-of-type {
+  border-top: none;
+}
+
+
+/* Colors ONLY for the icon inside */
+.assessment .warning {
+  background-color: #d33b31;
+}
+
+
+.assessment .success {
+  background-color: #6EC97B;
+}
+
+.assessment .trophy {
+  background-color: #f6d046
+}
+
+/* Inside sections and text styling */
+
+.assessment ul {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* TEXT */
+.assessment p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.assessment h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--Dark-gray);
+}
+
+/* Icons hovering effects */
+
+.assessment .icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+

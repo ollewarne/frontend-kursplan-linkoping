@@ -1,17 +1,50 @@
 class FooterPicComp extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="footer-pics footer-pics01" id="footer-row1">
-        <div id="row1-01">01 <img src="" alt="Portrait" class="footer-size" ></div>
-        <div id="row1-02">02 <img src="" alt="Portrait" class="footer-size" ></div>
-        <div id="row1-03">03 <img src="" alt="Portrait" class="footer-size" ></div>
-        <div id="row1-04">04 <img src="" alt="Portrait" class="footer-size" ></div>
-    </div>
-    <div class="footer-pics footer-pics02" id="footer-row2">
-        <div id="row2-01">01 <img src="" alt="Portrait" class="footer-size" ></div>
-        <div id="row2-02">02 <img src="" alt="Portrait" class="footer-size" ></div>
-        <div id="row2-03">03 <img src="" alt="Portrait" class="footer-size" ></div>
-    </div>`;
+        <section class="dev-pics">
+
+            <!-- Circles: row 1 -->
+            <div class="dev-pics-row-1">
+
+                <!-- ---------- circle 1: orange ---------- -->
+                <div id="dev-orange" class="dev-circle">
+                    <img src="images/Ingrid.jpg" alt="Portrait">
+                </div>
+
+                <!-- ---------- circle 2: green ----------  -->
+                <div id="dev-green" class="dev-circle">
+                    <img src="" alt="Portrait">
+                </div>
+
+                <!-- ---------- circle 3: pink ----------  -->
+                <div id="dev-pink" class="dev-circle">
+                    <img src="" alt="Portrait">
+                </div>
+
+                <!-- ---------- circle 4: blue ----------  -->
+                <div id="dev-blue" class="dev-circle">
+                    <img src="" alt="Portrait">
+                </div>
+            </div>
+
+            <!-- Circles: row 2 -->
+            <div class="dev-pics-row-2"> 
+
+                <!-- ---------- circle 5: purple ----------  -->
+                <div id="dev-purple" class="dev-circle">
+                    <img src="" alt="Portrait">
+                </div>
+                <!-- ---------- circle 6: yellow ---------- -->
+                <div id="dev-yellow" class="dev-circle">
+                    <img src="" alt="Portrait">
+                </div>
+                <!-- ---------- circle 7: red ----------  -->
+                <div id="dev-red" class="dev-circle">
+                    <img src="" alt="Portrait">
+                </div>
+            </div>
+        </section>
+        `;
     }
 }
 customElements.define('footer-pics', FooterPicComp);

@@ -12,7 +12,7 @@ class BedomningSection extends HTMLElement {
 
         <article class="level">
           <div class="icon success"><i class="ri-checkbox-circle-fill"></i></div>
-          <h3>Godkänd (C)</h3>
+          <h3>Godkänd (G)</h3>
           <p>Alla lärandemål är uppfyllda på en tillfredsställande nivå.</p>
         </article>
 

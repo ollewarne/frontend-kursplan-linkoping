@@ -13,4 +13,6 @@
 body {
     background-color: var(--Eerie-black);
     font-family: "Montserrat", sans-serif;
+    color: var(--White);
+    padding: 0%;
 }

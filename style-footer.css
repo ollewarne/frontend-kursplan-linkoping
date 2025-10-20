@@ -76,7 +76,7 @@ footer img{
     color: var(--Emerald); 
     color: var( --Bittersweet); 
     color: var( --Blue-gray); 
-    color: var( --Eerie-black); 
+         /* color: var( --Eerie-black); */
     color: var(--Mustard); 
     color: var(--Tangerine); 
     color: var(--Persian-red); 
@@ -131,6 +131,7 @@ footer img{
   color: whitesmoke;
   margin-bottom: 30px; 
 }
+
 
 
 .linje {

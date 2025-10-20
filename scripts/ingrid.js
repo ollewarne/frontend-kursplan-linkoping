@@ -1,5 +1,5 @@
 const ingridBtn = document.getElementById('dev-orange');
 
-ingridBtn.addEventListener('click', () => {
+ingridBtn.addEventListener('dblclick', () => {
     alert('Ingrid: https://github.com/ingridber');
 });

@@ -1,6 +1,16 @@
 # frontend-kursplan-linkoping
 Click [HERE](https://ollewarne.github.io/frontend-kursplan-linkoping/) to view the page!
 
+## Who are we?
+
+- Mattias
+- Delzar
+- Malsha
+- Twana
+- Olle - Responsible for git
+- Mårten
+- Ingrid - Scrum Master
+
 ## Goals for this project
 - Deliver a page to Chasacademy about their courseplan in Frontend.
 

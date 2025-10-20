@@ -1,12 +1,4 @@
-/* body {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    color: white;
-} */
-
 .summativ { 
-    width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: center;

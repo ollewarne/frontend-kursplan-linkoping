@@ -1,0 +1,139 @@
+
+
+:root{
+  --footer-bg: var(--Eerie-black, #0f1220);
+  --footer-fg: #eef2ff;
+  --footer-muted: #a5b4fc;
+  --footer-border-strong: rgba(235,229,229,.95);
+  --footer-border-soft: rgba(255,255,255,0.08);
+}
+
+
+footer{
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+  border-top: 1px solid var(--footer-border-soft);
+  margin-top: 2rem;
+  padding: 1.25rem 12px;
+}
+footer img{
+  display:block;
+  margin:0 auto;
+  max-width:min(100%,220px);
+  height:auto;
+  border-radius:8px;
+  outline:1px solid var(--footer-border-soft);
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--footer-muted);
+  font-size: 14px;
+}
+
+
+.ss-namespace {
+  
+  --ss-text: whitesmoke;
+  --ss-muted: rgba(255,255,255,0.85);
+
+  --ss-yellow: #ffd400;
+  --ss-pink: #ff66cc;
+  --ss-purple: #7f57ff;
+  --ss-blue: #2b6bff;
+  --ss-red: #ff3b3b;
+  --ss-orange: #ff8a00;
+  --ss-green: #23c552;
+
+
+  text-align: center;
+}
+
+.ss-namespace h1,
+.ss-namespace h2 {
+  color: var(--ss-text);
+  margin: 0.5rem 0 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.ss-namespace h1 { font-size: clamp(1.6rem, 2.5vw, 2.4rem); }
+.ss-namespace h2 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
+
+.ss-namespace p {
+  color: var(--ss-text);
+  margin: 0.5rem auto;
+  max-width: 70ch;
+  line-height: 1.55;
+}
+
+.dot-row {
+  text-align: center;   
+  font-size: 80px;      
+  letter-spacing: 1px; 
+  margin: 20px 0;      
+}
+
+
+.yellow { color: #FFF066; }
+.pink   { color: #FF69B4}
+.purple { color:  #8B00FF;}
+.blue   { color: #6495ED;}   
+.red    { color: red; }
+.orange { color: orange; }
+.green  { color: rgb(78, 213, 175); }  
+
+
+
+.ss-namespace .linje {
+  height: 2px;
+  background: var(--ss-text);
+  opacity: 0.9;
+  width: min(100%, 900px);
+  margin: 1.5rem auto 2rem;
+  border-radius: 2px;
+}
+
+
+.ss-namespace footer p {
+  color: var(--ss-muted);
+  margin: 0.35rem auto;
+  max-width: 80ch;
+}
+
+
+.ss-namespace footer img {
+  display: block;
+  margin: 1rem auto 0;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
+
+
+
+
+.s1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 30px; 
+}
+
+.a1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 30px; 
+}
+
+
+.linje {
+  height: 2px;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+@media (max-width: 520px) {
+  .ss-namespace p { padding: 0 1rem; }
+  .ss-namespace .linje { width: 85%; }
+}

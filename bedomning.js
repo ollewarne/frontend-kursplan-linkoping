@@ -17,7 +17,7 @@ class BedomningSection extends HTMLElement {
         </article>
 
         <article class="level">
-          <div class="icon trophy"><i class="ri-medal-line"></i></div>
+          <div class="icon trophy"><i class="ri-trophy-line"></i></div>
           <h3>Väl Godkänd (VG)</h3>
           <p>
             Alla lärandemål är uppfyllda på en tillfredsställande nivå.<br />

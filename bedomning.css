@@ -14,7 +14,7 @@
 
 /* Icon symbols inside the circle */
 .assessment .icon i {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 /* Title */
@@ -46,11 +46,11 @@
 
 
 .assessment .success {
-  background-color: #f6d046;
+  background-color: #6EC97B;
 }
 
 .assessment .trophy {
-  background-color: #6EC97B
+  background-color: #f6d046
 }
 
 /* Inside sections and text styling */

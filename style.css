@@ -14,4 +14,6 @@ body {
     background-color: var(--Eerie-black);
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+    color: var(--White);
+    padding: 0%;
 }

@@ -5,7 +5,7 @@
     color: white;
 } */
 
-.summativ {
+.summativ { 
     width: 375px;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 .underline {
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid var(--Mustard);
 }
 
 .grid-summativ {
@@ -32,15 +32,15 @@
 }
 
 #summativ01 {
-    background-color: #ED6B66;
+    background-color: var(--Persian-red);
     
 }
 
 #summativ02 {
-    background-color: #6EC97B;
+    background-color: var(--Emerald);
 
 }
 
 #summativ03 {
-    background-color: #F6D046;
+    background-color: var(--Mustard);
 }

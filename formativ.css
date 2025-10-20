@@ -15,7 +15,7 @@
 }
 
 .underline {
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid var(--Mustard);
 }
 
 .formative-grid{
@@ -32,11 +32,11 @@
 }
 
 #formative01 {
-    background-color: #5A21CD;
+    background-color: var(--Chrysler-blue);
     
 }
 
 #formative02 {
-    background-color: #D33B31;
+    background-color: var(--Persian-red);
 
 }

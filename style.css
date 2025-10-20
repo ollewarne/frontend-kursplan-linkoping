@@ -8,12 +8,12 @@
   --Mustard: #f6d046;
   --Tangerine: #ef8a17;
   --Persian-red: #d33b31;
-    --White: #ffffff;
+  --White: #ffffff;
+  scroll-behavior: smooth;
 }
 body {
     background-color: var(--Eerie-black);
     font-family: "Montserrat", sans-serif;
-    scroll-behavior: smooth;
     color: var(--White);
     padding: 0;
     margin: 0;

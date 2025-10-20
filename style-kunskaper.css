@@ -1,0 +1,140 @@
+/* ----- KUNSKAPER LAYOUT ----- */
+
+.kunskaper {
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kunskaper img {
+    width: 30vw;
+    display: block;
+
+}
+
+.kunskaper i {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3rem;
+}
+
+.kunskaperContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.kunskaper h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.kunskaperContainer p {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.kunskaper h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+
+/* ----- KUNSKAPER CARDS ----- */
+
+.kunskaperCards {
+    width: 90vw;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 5vw;
+}
+
+.kunskaperCards p {
+    font-size: 0.9rem;
+    width: 90%;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.kunskaperCards .cardPink p {
+    width: 80%;
+}
+
+.kunskaperCards li {
+    padding-top: 5%;
+    margin-right: 5%;
+}
+
+.kunskaperCards h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.kunskaperCards .card {
+    position: relative;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+
+/* .kunskaperCards .card div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin: 0;
+} */
+
+.kunskaperCards .card i {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: var(--Eerie-black);
+    opacity: 0.7;
+}
+
+.kunskaperCards .bigCard {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardPurple {
+    background-color: var(--Chrysler-blue);
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.cardGreen {
+    background-color: var(--Emerald);
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.cardPink {
+    background-color: var(--Bittersweet);
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.cardOrange {
+    background-color: var(--Tangerine);
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+
+.bigCardDisplay {
+    grid-area: 1 / 1 / span 2 / span 2;
+    z-index: 1; 
+}

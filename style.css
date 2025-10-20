@@ -1,0 +1,20 @@
+/* ===== Root Colors ===== */
+:root {
+  --Chrysler-blue: #5a21cd;
+  --Emerald: #6ec97b;
+  --Bittersweet: #ed6b66;
+  --Blue-gray: #57a0f2;
+  --Eerie-black: #1e2024;
+  --Mustard: #f6d046;
+  --Tangerine: #ef8a17;
+  --Persian-red: #d33b31;
+    --White: #ffffff;
+}
+body {
+    background-color: var(--Eerie-black);
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    color: var(--White);
+    padding: 0;
+    margin: 0;
+}

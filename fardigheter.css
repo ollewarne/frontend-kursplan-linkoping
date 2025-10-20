@@ -1,0 +1,97 @@
+.section-fardigheter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  color: white;
+}
+
+.title-fardigheter {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+.wrapper-fardigheter {
+  width: 90vw;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 5vw;
+}
+
+.box-fardigheter > i {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: var(--Eerie-black);
+  opacity: 0.7;
+}
+
+.fardigheter-big-box > i {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--Eerie-black);
+}
+
+.box-fardigheter, .fardigheter-big-box {
+  cursor: pointer;
+}
+
+.box-fardigheter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  font-weight: bolder;
+}
+
+.fardigheter-big-box {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 90vw;
+  height: 90vw;
+  border-radius: 5%;
+}
+
+#fardigheter-big-box1.visible, #fardigheter-big-box2.visible, #fardigheter-big-box3.visible, #fardigheter-big-box4.visible {
+  display: flex;
+}
+
+.list-fardigheter {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.list-fardigheter > li {
+  padding: .5em .5em;
+}
+
+.kvalitet-box > .list-fardigheter {
+  font-size: 1.1rem;
+}
+
+.yellow-fardigheter {
+  background-color: var(--Mustard);
+}
+
+.blue-fardigheter {
+  background-color: var(--Blue-gray);
+}
+
+.green-fardigheter {
+  background-color: var(--Emerald);
+}
+
+.red-fardigheter {
+  background-color: var(--Persian-red);
+}

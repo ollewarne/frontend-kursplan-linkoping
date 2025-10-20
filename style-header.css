@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  color: #ef8a17;
+  text-decoration: none;
+ font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: large;
+
+}
+.container a{
+  color: #ef8a17;
+  text-decoration: none;
+
+}
+.container a:hover{
+  text-decoration: underline;
+}
+@media (max-width: 768px){
+  .container{
+display: none;
+  }
+}
+
+
+/* SECTION HEADER-INTRO STYLING */
+
+.header-intro {
+  color: white
+}
+
+/* header-intro -> colored-dots: setting color for dots */
+.header-dot-yellow {
+  background-color: var(--Mustard);
+} 
+.header-dot-pink {
+  background-color: var(--Bittersweet);
+}
+.header-dot-purple {
+  background-color: var(--Chrysler-blue);
+} 
+.header-dot-blue {
+  background-color: var(--Blue-gray);
+} 
+.header-dot-red {
+  background-color: var(--Persian-red);
+} 
+.header-dot-orange {
+  background-color: var(--Tangerine);
+} 
+.header-dot-green {
+  background-color: var(--Emerald);
+} 
+
+.header-intro .colored-dots div{
+  width: 5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+.header-intro .colored-dots {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+
+.header-intro h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.header-intro h1 span {
+  display: block;
+  font-weight: 300;
+}
+
+.header-intro-text {
+  width: 90%;
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+.header-student-info h3 {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.header-student-info .student-circles {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.header-student-info .student-circles div{
+  width: 18vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1% 0 1%;
+}
+
+.header-student-info .student-circles div p{
+  font-weight: 600;
+}
+
+.student-circle-orange {
+  background-color: var(--Tangerine);
+}
+
+.student-circle-blue {
+  background-color: var(--Blue-gray);
+}
+
+.student-circle-pink {
+  background-color: var(--Bittersweet);
+}
+
+.header-student-info .student-text {
+  width: 90%;
+  font-size: 0.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.header-outro-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 90vw;
+  margin: 5% auto 20% auto;
+}

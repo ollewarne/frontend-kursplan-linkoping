@@ -1,19 +1,127 @@
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bedömning</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-  <link rel="stylesheet" href="bedomning.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <!-- ICONS  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="StyleNav.css">
+    <link rel="stylesheet" href="./fardigheter.css">
+<link rel="stylesheet" href="./style-footer.css">
+    <link rel="stylesheet" href="style-kunskaper.css">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="formativ.css">
+    <link rel="stylesheet" href="summativ.css">
+   <link rel="stylesheet" href="style-footer-button.css">
+    <link rel="stylesheet" href="bedomning.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
+
 <body>
-<body>
-  <nav-bar></nav-bar>
-  <bedomning-section></bedomning-section>
-   <script type="module" src="bedomning.js"></script>
+    <header>
+      <nav class="container">
+        <a href="#">Lärandemål</a>
+        <a href="#">Kunskapskontroll</a>
+        <a href="#">Principer</a>
+        <a href="#">Pedagogiskt stöd</a>
+      </nav>
+      <nav-bar></nav-bar>
+
+      <header-intro-cmp></header-intro-cmp>
+
+    </header>
+
+    <main>
+      
+
+        <kunskaper-cmp></kunskaper-cmp>
+        <fardigheter-cmp></fardigheter-cmp>
+        <summativ-comp></summativ-comp>
+        <formativ-comp></formativ-comp>
+       <bedomning-section></bedomning-section>
+
+<section>
+   <ul class="a1">
+    <h1>SÄRSKILT STÖD</h1>
+    <P>
+        Vid behöv av särskilt pedagogiskt stöd eller 
+        komplettering kan följande anpassningar göras vid 
+        uppvisande av intyg.
+    </P>
+         <ul><span>•</span>Förläng tid vid examinationstillfället.</ul>
+          <ul><span>•</span>Alternativa examinationsformer,exempelvis skriftliga istället för muntliga moment.</ul>
+            <ul><span>•</span>Utökat Stöd för att underlätta inlärning.</ul>
+   </article>
+   
+<p class="dot-row">
+  <span class="yellow">•</span>
+  <span class="pink">•</span>
+  <span class="purple">•</span>
+  <span class="blue">•</span>
+  <span class="red">•</span>
+  <span class="orange">•</span>
+  <span class="green">•</span>
+</p>
+
+    
+
+<article class="a1">
+<h2>KOMPLETTERING & OMPROV</h2>
+<p>
+    Studerande har rätt till en(1) omexamination inom 
+    sex(6) månader från det ordinarie 
+    examinationstillfället. Tid och form fastställs av 
+    utbildningsanordnaren och utbildarenoch meddelas 
+    till studerande, som förväntas följa dessa beslut.
+    om omprovet inte genomförs eller inte godkänns, kan 
+    inget betyg sättas i kursen. studerande kan dock 
+    försätta med efterföljande kurser, förutsatt att den 
+    missade kursen inte utgör ett kunskapskrav för dessa.
+
+</p>
+</article>
+
+<div class="linje"></div>
+
+</section>
+
+
+
+    </main>
+
+    <footer>
+      <section class="s1">
+        <p>VALBAR KURS Nej. YRKESHÖGSKOLEPOÄNG 60</p>
+        <p>UNDERVISNINGSSPRÅK Svenska, delvis Engelska</p>
+        <p>KURSPLAN FASTSTÄLLD 2025-05-05</p>
+        <p>UTBILDNINGSNAMN FULLSTACKUTVECKLARE JavaScript</p>
+        <p>UTBILDNINGSNUMMER YH02029.UTBILDNINGSOMGÅNG 3</p>
+      </section>
+
+      <img
+        src="./images/GetAttachmentThumbnail.jpg"
+        width="200"
+        height="150"
+        alt=""
+      />
+
+      <div class="foot-button">
+        <a href="" class="button">Tillbaka till toppen</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./components/nav-bar.js"></script>
+    <script type="module" src="components/kunskaper.js"></script>
+    <script type="module" src="./components/fardigheter.js"></script>
+    <script type="module" src="./components/footer.js"></script>   
+    <script type="module" src="./components/formativ.js"></script>   
+    <script type="module" src="./components/summativ.js"></script>   
+    <script type="module" src="./components/header-intro.js"></script> 
+    <script type="module" src="bedomning.js"></script>
 </body>
 </html>

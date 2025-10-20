@@ -9,4 +9,4 @@ class Divider extends HTMLElement {
    `;
   }
 }
-customElements.define('fardigheter-cmp', Fardigheter);
+customElements.define('divider-dots', Divider);

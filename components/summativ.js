@@ -2,7 +2,7 @@ class Summative extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
          <section class="summativ">
-            <h1>KUNSKAPSKONTROLL</h1>
+            <h1 id="kunskap">KUNSKAPSKONTROLL</h1>
             <h2 class="underline">SUMMATIV BEDÖMNING</h2>
             <p>Summativ bedömning utvärderar studerandes kunskaper och färdigheter retroaktivt för att sammanfatta vad
              den studerande kan vid examinationstillfället. Den summativa bedömningen täcker samtliga kursmål och sker vid

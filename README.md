@@ -1,15 +1,14 @@
 # frontend-kursplan-linkoping
 Click [HERE](https://ollewarne.github.io/frontend-kursplan-linkoping/) to view the page!
 
-##Goals for this project
+## Goals for this project
 - Deliver a page to Chasacademy about their courseplan in Frontend.
 
 ## Design
 - Mobile first
 
-- ###Colors
+### Colors
 | Color Name | Hex Code |
-|------------|----------|
 | Chrysler blue | `#5a21cd` |
 | Emerald       | `#6ec97b` |
 | Bitterswee    | `#ed6b66` |

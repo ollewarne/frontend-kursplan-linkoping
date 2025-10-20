@@ -4,7 +4,9 @@
   grid-template-rows: repeat(2, auto);
   margin-bottom: 0;
   padding-bottom: 0;
-  border-bottom: 3px solid rgba(235,229,229,.95);
+  color: var(--White);
+  border-bottom: 3px solid currentColor;
+  opacity: .95;
   position: relative;
 }
 
@@ -40,7 +42,7 @@
 .divHambureger i{
   transform: translateX(-22px);
   font-size:40px;
-  color:#fff;
+  color:var(--White);
   line-height:1;
 }
 
@@ -54,14 +56,14 @@
   box-sizing: border-box;
   text-align: right;  
   border: 2px solid var(--White);
-  background: rgba(0,0,0,.90);
+  background: color-mix(in srgb, var(--Eerie-black) 90%, transparent);
   z-index: 1000;
   padding: 16px 20px;
   box-shadow: 0 16px 40px rgba(0,0,0,.25);
 }
 .menu-links a{
   display: block;              
-  color: #fff;                 
+  color: var(--White);                 
   font-weight: 600;             
   text-transform: uppercase;   
   letter-spacing: .4px;        
@@ -112,7 +114,7 @@ nav-bar.is-open .menu-links { display: block; }
     font-size: 14px;
     font-weight: 700;
     letter-spacing: .08em;
-    color: var(--orange, #F5A623);
+    color: var( --Tangerine);
     text-decoration: none;
   }
   nav-bar .menu-links a:hover{ text-decoration: underline; }

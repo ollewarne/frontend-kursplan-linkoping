@@ -1,0 +1,13 @@
+.divider-dots {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.divider-dot {
+    background-color: white;
+    width: 3.5vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 15% 2% 15% 2%
+}

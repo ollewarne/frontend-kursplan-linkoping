@@ -1,7 +1,7 @@
 class HeaderIntro extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
- <section class="header-intro">
+ <section class="header-intro" id="intro">
             <div class="colored-dots">
                     <div class="header-dot-yellow"></div>
                     <div class="header-dot-pink"></div>

@@ -1,13 +1,4 @@
-/* body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
-    color: white;
-} */
-
 .formativ {
-    width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: center;

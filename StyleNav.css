@@ -4,7 +4,9 @@
   grid-template-rows: repeat(2, auto);
   margin-bottom: 0;
   padding-bottom: 0;
-  border-bottom: 3px solid rgba(235,229,229,.95);
+  color: var(--White);
+  border-bottom: 3px solid currentColor;
+  opacity: .95;
   position: relative;
 }
 
@@ -23,6 +25,7 @@
   padding-left:12px;
 }
 .logo-img{
+  transform: translateX(9px);
   height:45px;          
   width:auto;
   object-fit:contain;
@@ -37,31 +40,30 @@
   padding-right:0;
 }
 .divHambureger i{
+  transform: translateX(-22px);
   font-size:40px;
-  color:#fff;
+  color:var(--White);
   line-height:1;
 }
 
 .menu-links{
   position: absolute;
-  top: 72px;    
-  right: 7px;
+  top: 65px;
+  left: 0;
+  right: 0;         
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
   text-align: right;  
   border: 2px solid var(--White);
-  display: inline-block;
-  width: fit-content;
-  background: var(--Eerie-black);
+  background: color-mix(in srgb, var(--Eerie-black) 90%, transparent);
   z-index: 1000;
-  width: 320px;          
-  max-height: auto;     
   padding: 16px 20px;
-  box-shadow: 0 16px 40px rgba(0,0,0,.25); 
-  background: rgba(0,0,0,.90);
+  box-shadow: 0 16px 40px rgba(0,0,0,.25);
 }
-
 .menu-links a{
   display: block;              
-  color: #fff;                 
+  color: var(--White);                 
   font-weight: 600;             
   text-transform: uppercase;   
   letter-spacing: .4px;        
@@ -70,10 +72,51 @@
   text-decoration: none;        
   font-size: clamp(28px, 4.5vw, 28px); 
 }
-.menu-links a:hover{
-  text-decoration: underline;  
-}
-
 nav-bar .menu-links { display: none; }
 
 nav-bar.is-open .menu-links { display: block; }
+
+@media (min-width: 835px) {
+    .divLogo {
+    display: none;
+  }
+    .divHambureger { 
+    display: none;
+  }
+
+  nav-bar .menu-links,
+  nav-bar.is-open .menu-links {
+    display: none;
+  }
+    .parent-Nav {
+    border-bottom: none;
+  }
+    .divNav{
+    display: flex;
+    align-items: center;
+  }
+  nav-bar .menu-links{
+    position: static;              
+    display: flex !important;
+    align-items: center;
+    justify-content: center;       
+    gap: 32px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: auto;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  nav-bar .menu-links a{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: var( --Tangerine);
+    text-decoration: none;
+  }
+  nav-bar .menu-links a:hover{ text-decoration: underline; }
+
+}

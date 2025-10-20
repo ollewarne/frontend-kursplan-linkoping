@@ -5,9 +5,12 @@ Click [HERE](https://ollewarne.github.io/frontend-kursplan-linkoping/) to view t
 - Deliver a page to Chasacademy about their courseplan in Frontend.
 
 ## Design
+We chose to design the page using fun colors and shapes.  
+Some of our design goals are:
 - Mobile first
 
 ### Colors
+These are the colors we use on the page.
 | Color Name | Hex Code |
 |------------|----------|
 | Chrysler blue | `#5a21cd` |
@@ -19,4 +22,3 @@ Click [HERE](https://ollewarne.github.io/frontend-kursplan-linkoping/) to view t
 | Tangerine     | `#ef8a17` |
 | Persian red   | `#d33b31` |
 | White         | `#ffffff` |
-|---------------|-----------|

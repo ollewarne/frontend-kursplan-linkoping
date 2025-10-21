@@ -3,20 +3,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 25px 0 25px;
+    width: 90vw; 
+    margin: 0 auto;
 }
 
 .underline {
     border-bottom: 2px solid var(--Mustard);
 }
 
-.formative-grid{
+.formative-grid {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 2;
 }
 
-.formativ-layout{
+.formativ-layout {
     display: grid;
     padding: 15px;
     border-radius: 15px;
@@ -25,10 +26,8 @@
 
 #formative01 {
     background-color: var(--Chrysler-blue);
-    
 }
 
 #formative02 {
     background-color: var(--Persian-red);
-
 }

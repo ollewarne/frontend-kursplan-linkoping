@@ -1,9 +1,9 @@
 .formativ {
-    width: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 0 25px 0 25px;
 }
 
 .underline {

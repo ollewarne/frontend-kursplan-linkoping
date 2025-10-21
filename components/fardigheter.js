@@ -43,45 +43,9 @@ class Fardigheter extends HTMLElement {
 }
 customElements.define('fardigheter-cmp', Fardigheter);
 
-const box1 = document.getElementById("fardigheter-box1");
-const bigBox1 = document.getElementById("fardigheter-big-box1");
-box1.addEventListener('click', () => {
-  bigBox1.classList.add("visible")
-});
-
-bigBox1.addEventListener('click', () => {
-  bigBox1.classList.remove("visible");
-});
-
-
-const box2 = document.getElementById("fardigheter-box2");
-const bigBox2 = document.getElementById("fardigheter-big-box2");
-box2.addEventListener('click', () => {
-  bigBox2.classList.add("visible")
-});
-
-bigBox2.addEventListener('click', () => {
-  bigBox2.classList.remove("visible");
-});
-
-
-const box3 = document.getElementById("fardigheter-box3");
-const bigBox3 = document.getElementById("fardigheter-big-box3");
-box3.addEventListener('click', () => {
-  bigBox3.classList.add("visible")
-});
-
-bigBox3.addEventListener('click', () => {
-  bigBox3.classList.remove("visible");
-});
-
-
-const box4 = document.getElementById("fardigheter-box4");
-const bigBox4 = document.getElementById("fardigheter-big-box4");
-box4.addEventListener('click', () => {
-  bigBox4.classList.add("visible")
-});
-
-bigBox4.addEventListener('click', () => {
-  bigBox4.classList.remove("visible");
+const fardigheterWrapper = document.querySelector(".wrapper-fardigheter");
+fardigheterWrapper.addEventListener('click', (event) => {
+  if (event.target.classList.includes("box-fardigheter")) {
+    event.target.classList.toggle("visible");
+  }
 });

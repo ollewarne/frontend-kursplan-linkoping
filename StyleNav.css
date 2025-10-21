@@ -1,4 +1,16 @@
-html, body { height: auto; overflow-y: auto; }
+html, body { 
+  height: auto; 
+  overflow-y: auto; 
+}
+
+html { 
+  scroll-behavior: smooth; 
+  scroll-padding-top: 85px; 
+}
+
+/* .page { 
+scroll-padding-top: 65px; 
+} */
 
 .wrapper, .page, .content, main {
   overflow: visible !important;
@@ -133,6 +145,8 @@ nav-bar.is-open .menu-links { display: block; }
     color: var( --Tangerine);
     text-decoration: none;
   }
-  nav-bar .menu-links a:hover{ text-decoration: underline; }
+  nav-bar .menu-links a:hover{ 
+    text-decoration: underline; 
+  }
 
 }

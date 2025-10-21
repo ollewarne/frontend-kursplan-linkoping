@@ -1,50 +1,57 @@
-/* ---------- KUNSKAPER LAYOUT ---------- */
+/* ---------- MOBILE FIRST ---------- */
 
+/* ----- KUNSKAPER INTRO ----- */
 .kunskaper {
-    color: white;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.kunskaper img {
+.kunskaper-logo {
     width: 30vw;
     display: block;
 }
 
 .kunskaper i {
-    margin-top: 5%;
-    margin-bottom: 5%;
     font-size: 3rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.kunskaperContainer {
-    width: 70vw;
+.kunskaper-container {
     display: flex;
     flex-direction: column;
 }
 
-.kunskaper h2 {
+.kunskaper-container h2 {
     font-size: 2rem;
-    letter-spacing: 0.1rem;
     margin: 0;
 }
 
-.kunskaperContainer p {
+.kunskaper-container p {
     font-size: 0.9rem;
-    margin-top: 0;
+    margin: 0;
 }
 
-.kunskaper h3 {
+.kunskaper-container p span {
+    display: block;
+}
+
+
+/* ----- CARDS INTRO ----- */
+.kunskaper-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kunskaper-cards h3 {
     font-size: 1.5rem;
-    margin-bottom: 2%;
 }
 
 
-/*-------------- KUNSKAPER CARDS ---------- */
-
-.kunskaperCards {
+/* ----- CARDS GRID: COLOR & POSITIONING ----- */
+.cards-grid {
     width: 90vw;
     aspect-ratio: 1/1;
     display: grid;
@@ -52,42 +59,53 @@
     gap: 5vw;
 }
 
-.kunskaperCards p {
-    font-size: 0.9rem;
-    width: 90%;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
+.color-purple {
+    background-color: var(--Chrysler-blue);
+    grid-area: 1 / 1 / span 1 / span 1;
 }
 
-.kunskaperCards .cardPink p {
+.color-green {
+    background-color: var(--Emerald);
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.color-pink {
+    background-color: var(--Bittersweet);
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.color-orange {
+    background-color: var(--Tangerine);
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.big-card {
+    grid-area: 1 / 1/ span 2 /span 2;
+    z-index: 2;
+}
+
+
+/* ----- CARD: STYLING ----- */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card h4 {
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.03rem;
+}
+
+.color-pink h4 {
     width: 80%;
 }
 
-.kunskaperCards li {
-    padding-top: 5%;
-    margin-right: 5%;
-}
-
-.kunskaperCards h5 {
-    margin: 0;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-.kunskaperCards .card {
-    position: relative;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-}
-
-
-/* ---------- EXPAND/COLLAPSE ICON ---------- */
-
-.kunskaperCards .card i {
+.kunskaper-cards i {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -98,45 +116,49 @@
     opacity: 0.7;
 }
 
-.kunskaperCards .bigCard i {
-    opacity: 1;
+/* small card  */
+.small-card {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* big card */
+.big-card h4 {
+    font-size: 1.1rem;
+    padding-top: 8%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid;
+}
+
+.big-card li {
+    padding-top: 5%;
+    margin-right: 5%;
+}
+
+.big-card i {
+    font-size: 2rem;
     font-weight: 1000;
+    opacity: 1;
 }
 
-
-/* ---------- POSITIONING CLOSED CARDS ---------- */
-.cardPurple {
-    background-color: var(--Chrysler-blue);
-    grid-area: 1 / 1 / span 1 / span 1;
-}
-
-.cardGreen {
-    background-color: var(--Emerald);
-    grid-area: 1 / 2 / span 1 / span 1;
-}
-
-.cardPink {
-    background-color: var(--Bittersweet);
-    grid-area: 2 / 1 / span 1 / span 1;
-}
-
-.cardOrange {
-    background-color: var(--Tangerine);
-    grid-area: 2 / 2 / span 1 / span 1;
-}
-
-
-/* ---------- OPEN CARD LAYOUT ---------- */
-
-.bigCardDisplay {
+.big-card {
     grid-area: 1 / 1 / span 2 / span 2;
-    z-index: 1; 
+    z-index: 2;
+    width: 90vw;
+    aspect-ratio: 1/1;
 }
 
-.kunskaperCards .bigCard {
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+/* ----- CARD: SCRIPT STYLING ----- */
+.card-hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.8s ease;
+ }
+
+.card-show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }

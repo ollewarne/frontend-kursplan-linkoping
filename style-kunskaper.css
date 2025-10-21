@@ -1,4 +1,4 @@
-/* ----- KUNSKAPER LAYOUT ----- */
+/* ---------- KUNSKAPER LAYOUT ---------- */
 
 .kunskaper {
     color: white;
@@ -11,7 +11,6 @@
 .kunskaper img {
     width: 30vw;
     display: block;
-
 }
 
 .kunskaper i {
@@ -43,7 +42,7 @@
 }
 
 
-/* ----- KUNSKAPER CARDS ----- */
+/*-------------- KUNSKAPER CARDS ---------- */
 
 .kunskaperCards {
     width: 90vw;
@@ -86,13 +85,7 @@
 }
 
 
-/* .kunskaperCards .card div {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    margin: 0;
-} */
+/* ---------- EXPAND/COLLAPSE ICON ---------- */
 
 .kunskaperCards .card i {
     position: absolute;
@@ -105,14 +98,13 @@
     opacity: 0.7;
 }
 
-.kunskaperCards .bigCard {
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.kunskaperCards .bigCard i {
+    opacity: 1;
+    font-weight: 1000;
 }
 
+
+/* ---------- POSITIONING CLOSED CARDS ---------- */
 .cardPurple {
     background-color: var(--Chrysler-blue);
     grid-area: 1 / 1 / span 1 / span 1;
@@ -134,7 +126,17 @@
 }
 
 
+/* ---------- OPEN CARD LAYOUT ---------- */
+
 .bigCardDisplay {
     grid-area: 1 / 1 / span 2 / span 2;
     z-index: 1; 
+}
+
+.kunskaperCards .bigCard {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

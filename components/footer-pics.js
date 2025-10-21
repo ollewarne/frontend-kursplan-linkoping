@@ -3,6 +3,8 @@ class FooterPicComp extends HTMLElement {
         this.innerHTML = `
         <section class="dev-pics">
 
+            <h3>DEVELOPERS</h3>
+
             <!-- Circles: row 1 -->
             <div class="dev-pics-row-1">
 

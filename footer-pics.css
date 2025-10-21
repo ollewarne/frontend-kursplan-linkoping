@@ -1,12 +1,16 @@
+.dev-pics h3 {
+    text-align: center;
+    padding: 10% 0 5% 0;
+    font-size: 1.2rem;
+}
+
 .dev-pics-row-1 {
   display: flex;
-  width: 100vw;
   justify-content: center;
 }
 
 .dev-pics-row-2 {
   display: flex;
-  width: 100vw;
   justify-content: center;
 }
 

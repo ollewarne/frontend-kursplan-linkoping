@@ -45,7 +45,15 @@ customElements.define('fardigheter-cmp', Fardigheter);
 
 const fardigheterWrapper = document.querySelector(".wrapper-fardigheter");
 fardigheterWrapper.addEventListener('click', (event) => {
-  if (event.target.classList.includes("box-fardigheter")) {
-    event.target.classList.toggle("visible");
+  if (event.target.classList.contains("wrapper-fardigheter")) return; // stop console errors from clicking the wrapper element
+  if ([...event.target.classList].includes("box-fardigheter")) {
+    event.target.nextElementSibling.classList.add("visible")
+  } else if (event.target.tagName === 'I') {
+    if (event.target.parentNode.classList.contains('fardigheter-big-box')) {
+      event.target.parentNode.classList.remove('visible');
+    }
+    event.target.parentNode.nextElementSibling.classList.add("visible")
+  } else {
+    event.target.closest('.fardigheter-big-box').classList.remove('visible');
   }
 });

@@ -18,7 +18,7 @@ class FooterPicComp extends HTMLElement {
 
                 <!-- ---------- circle 3: pink ----------  -->
                 <div id="dev-pink" class="dev-circle">
-                    <img src="" alt="Portrait">
+                    <img src="images/marten.jpg" alt="Portrait">
                 </div>
 
                 <!-- ---------- circle 4: blue ----------  -->

@@ -1,3 +1,16 @@
+html, body { height: auto; overflow-y: auto; }
+
+.wrapper, .page, .content, main {
+  overflow: visible !important;
+  transform: none !important;
+  filter: none !important;
+  perspective: none !important;
+}
+
+body{
+  position: relative;
+  padding-top: 65px;
+}
 .parent-Nav{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -5,9 +18,9 @@
   margin-bottom: 0;
   padding-bottom: 0;
   color: var(--White);
-  border-bottom: 3px solid currentColor;
+  border-bottom: 1px solid currentColor;
   opacity: .95;
-  position: relative;
+  /* position: relative; */
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1200;

@@ -20,44 +20,52 @@
    <link rel="stylesheet" href="style-footer-button.css">
     <link rel="stylesheet" href="bedomning.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="footer-pics.css">
+  <link rel="stylesheet" href="divider-dots.css">
 </head>
 
 <body>
     <header>
-      <nav class="container">
-        <a href="#">Lärandemål</a>
-        <a href="#">Kunskapskontroll</a>
-        <a href="#">Principer</a>
-        <a href="#">Pedagogiskt stöd</a>
-      </nav>
       <nav-bar></nav-bar>
-
       <header-intro-cmp></header-intro-cmp>
 
     </header>
 
+
+
     <main>
       
 
-        <kunskaper-cmp></kunskaper-cmp>
-        <fardigheter-cmp></fardigheter-cmp>
-        <summativ-comp></summativ-comp>
-        <formativ-comp></formativ-comp>
-       <bedomning-section></bedomning-section>
+      <kunskaper-cmp></kunskaper-cmp>
+      <fardigheter-cmp></fardigheter-cmp>
 
-<section>
-   <ul class="a1">
+      <divider-dots></divider-dots>
+
+      <summativ-comp></summativ-comp>
+      <formativ-comp></formativ-comp>
+
+      <divider-dots></divider-dots>
+
+      <bedomning-section></bedomning-section>
+      
+      <divider-dots></divider-dots>
+
+
+<section id="SÄRSKILT STÖD">
+   <article class="a1">
     <h1>SÄRSKILT STÖD</h1>
     <P>
         Vid behöv av särskilt pedagogiskt stöd eller 
         komplettering kan följande anpassningar göras vid 
         uppvisande av intyg.
     </P>
-         <ul><span>•</span>Förläng tid vid examinationstillfället.</ul>
-          <ul><span>•</span>Alternativa examinationsformer,exempelvis skriftliga istället för muntliga moment.</ul>
-            <ul><span>•</span>Utökat Stöd för att underlätta inlärning.</ul>
+    <ul>
+       <li>Förläng tid vid examinationstillfället.</li>
+          <li>Alternativa examinationsformer,exempelvis skriftliga istället för muntliga moment.</li>
+          <li>Utökat Stöd för att underlätta inlärning.</li>
+    </ul>
    </article>
-   
+ 
 <p class="dot-row">
   <span class="yellow">•</span>
   <span class="pink">•</span>
@@ -91,7 +99,6 @@
 </section>
 
 
-
     </main>
 
     <footer>
@@ -102,13 +109,14 @@
         <p>UTBILDNINGSNAMN FULLSTACKUTVECKLARE JavaScript</p>
         <p>UTBILDNINGSNUMMER YH02029.UTBILDNINGSOMGÅNG 3</p>
       </section>
+      <footer-pics></footer-pics>
 
       <img
         src="./images/GetAttachmentThumbnail.jpg"
         width="200"
         height="150"
         alt=""
-      />
+      /> 
 
       <div class="foot-button">
         <a href="#" class="button">Tillbaka till toppen</a>
@@ -123,5 +131,14 @@
     <script type="module" src="./components/summativ.js"></script>   
     <script type="module" src="./components/header-intro.js"></script> 
     <script type="module" src="./components/bedomning.js"></script>
+    <script type="module" src="./components/footer-pics.js"></script>
+    <script type="module" src="./components/divider-dots.js"></script>
+
+    <!-- FOOTER PICTURE SCRIPTS BELOW -->
+    <script defer src="scripts/olle.js"></script>
+    <script src="scripts/ingrid.js" defer></script>
+    <script src="scripts/marten.js" defer></script>
+    <script src="scripts/Twana.js" defer></script>
+
 </body>
 </html>

@@ -125,9 +125,14 @@
 /* big card */
 .big-card h4 {
     font-size: 1.1rem;
-    padding-top: 8%;
+    padding-top: 5%;
     padding-bottom: 1%;
     border-bottom: 1px solid;
+    letter-spacing: 0;
+}
+
+.big-card ul {
+    margin: 0;
 }
 
 .big-card li {

@@ -69,8 +69,9 @@ footer img{
 .dot-row {
   text-align: center;   
   font-size: 80px;      
-  letter-spacing: 1px; 
-  margin: 20px 0;  
+  letter-spacing: -3px; 
+   margin-right: 1px; 
+  margin: 0px 0;  
    
     color: var(  --Chrysler-blue);  
     color: var(--Emerald); 
@@ -98,7 +99,7 @@ footer img{
   opacity: 0.9;
   width: min(100%, 900px);
   margin: 1.5rem auto 2rem;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 
@@ -121,24 +122,70 @@ footer img{
 
 
 .s1 {
-  text-align: center;
+ 
+  text-justify: center;
   color: whitesmoke;
   margin-bottom: 30px; 
+  font-size: 16px;
+  white-space: nowrap;
+  text-align-last: center;
 }
 
 .a1 {
+  text-align: left , center;
+  color: whitesmoke;
+  margin-bottom: 30px; 
+  font-size: 16px;
+  text-justify: auto;
+  white-space: nowrap;
+  text-align-last: center; 
+}
+ .a1 .p1 {
+  text-align: left , center;
+  color: whitesmoke;
+  margin-bottom: 30px; 
+  font-size: 16px;
+  text-justify: left, center;
+ 
+}
+
+.a1 .ul1 {
+  text-align: left , center;
+  color: whitesmoke;
+  margin-bottom: 30px; 
+  font-size: 16px;
+    margin-left: 5px;
+    text-align: left; 
+  text-justify: left, center;
+   white-space: nowrap;
+  text-align-last: center; 
+}
+
+.a2 {
+   text-align: left;
+  padding-left: 2px;
   text-align: center;
   color: whitesmoke;
   margin-bottom: 30px; 
+  font-size: 16px;
+  text-justify: auto;
+  
+  text-align-last: center; 
 }
 
 
 
 .linje {
+  
   height: 2px;
   background-color: whitesmoke;
-  width: 100%;
-  margin: 20px 0;
+  width: 80%;
+ 
+  border-radius: 1px;
+    margin-left: 35px;  
+  margin-right: 35px; 
+  margin-bottom: 3px;
+  
 }
 
 

@@ -143,9 +143,11 @@
 }
 
 .big-card i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 1000;
     opacity: 1;
+    top: 1rem;
+    right: 1rem;
 }
 
 .big-card {

@@ -4,8 +4,8 @@ class Fardigheter extends HTMLElement {
     <section class="section-fardigheter">
       <h3 class="title-fardigheter">FÄRDIGHETER</h3>
       <div class="wrapper-fardigheter">
-          <div id="fardigheter-box1" class="box-fardigheter yellow-fardigheter">UTVECKLING<i class="ri-add-line"></i></div>
-          <div id="fardigheter-big-box1" class="fardigheter-big-box utveckling-box yellow-fardigheter">
+          <div id="fardigheter-box1" class="box-fardigheter red-fardigheter">UTVECKLING<i class="ri-add-line"></i></div>
+          <div id="fardigheter-big-box1" class="fardigheter-big-box utveckling-box red-fardigheter">
             <i class="ri-subtract-fill"></i>
             <ul class="list-fardigheter">
               <li>Utföra enklare DOM-manipulation med JavaScript.</li>
@@ -30,8 +30,8 @@ class Fardigheter extends HTMLElement {
               <li>Dokumentera en frontendkodbas genom att skriva detaljerade JSDoc-kommentarer och instruktioner.</li>
             </ul>
           </div>
-          <div id="fardigheter-box4" class="box-fardigheter red-fardigheter">ARBETSSÄTT<i class="ri-add-line"></i></div>
-          <div id="fardigheter-big-box4" class="fardigheter-big-box arbetssatt-box red-fardigheter">
+          <div id="fardigheter-box4" class="box-fardigheter purple-fardigheter">ARBETSSÄTT<i class="ri-add-line"></i></div>
+          <div id="fardigheter-big-box4" class="fardigheter-big-box arbetssatt-box purple-fardigheter">
             <i class="ri-subtract-fill"></i>
             <ul class="list-fardigheter">
               <li>Använda en agil arbetsmetodik för att planera och genomföra frontenduppgifter.</li>

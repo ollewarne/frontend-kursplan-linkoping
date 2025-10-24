@@ -22,6 +22,9 @@ class Kunskaper extends HTMLElement {
         <!-- START: cards-grid -->
         <div class="cards-grid"> 
 
+            <!------- CLICK ME ------->
+            <p id="click-animation" class="click-me">Click me →</p>
+
             <!------- PURPLE CARD------->
             <!------- display ------->
             <div id="purple-card" class="card small-card color-purple">
@@ -104,7 +107,8 @@ customElements.define('kunskaper-cmp', Kunskaper);
 
 
 
-// SCRIPT: OPENING CARDS
+// SCRIPT: OPENING CARDS, REMOVE CLICK-ME ANIMATION
+const click = document.getElementById('click-animation');
 
 // ---------- purple card ----------
 const purpleCard = document.getElementById('purple-card');
@@ -123,6 +127,8 @@ purpleCard.addEventListener('click', () => {
     greenCard.classList.remove('green-clicked');
     pinkCard.classList.remove('pink-clicked');
     orangeCard.classList.remove('orange-clicked');
+    // Remove click-me animation
+    click.classList.add('click-stop');
 });
 
 purpleOpen.addEventListener('click', () => {
@@ -148,6 +154,8 @@ greenCard.addEventListener('click', () => {
     purpleCard.classList.remove('purple-clicked');
     pinkCard.classList.remove('pink-clicked');
     orangeCard.classList.remove('orange-clicked');
+    // Remove click-me animation
+    click.classList.add('click-stop');
 });
 
 greenOpen.addEventListener('click', () => {
@@ -175,6 +183,8 @@ pinkCard.addEventListener('click', () => {
     purpleCard.classList.remove('purple-clicked');
     greenCard.classList.remove('green-clicked');
     orangeCard.classList.remove('orange-clicked');
+    // Remove click-me animation
+    click.classList.add('click-stop');
 });
 
 pinkOpen.addEventListener('click', () => {
@@ -202,6 +212,8 @@ orangeCard.addEventListener('click', () => {
     purpleCard.classList.remove('purple-clicked');
     greenCard.classList.remove('green-clicked');
     pinkCard.classList.remove('pink-clicked');
+    // Remove click-me animation
+    click.classList.add('click-stop');
 });
 
 orangeOpen.addEventListener('click', () => {

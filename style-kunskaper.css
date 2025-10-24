@@ -178,8 +178,9 @@
 }
 
 
-/* ----- DISPLAY NONE: FOR DESKTOP LAYOUT ----- */
-.kunskaper-container .desktop-h2 {
+/* ----- DISPLAY NONE: FROM DESKTOP LAYOUT ----- */
+.kunskaper-container .desktop-h2,
+.click-me {
     display: none;
 }
 
@@ -194,6 +195,31 @@
     .kunskaper img,
     .kunskaper i,
     .kunskaper-cards h3{
+        display: none;
+    }
+
+    /* DISPLAY click ICON */
+
+    @keyframes clickBlip {
+        from {font-weight: 100;}
+        to {font-weight: 300;}
+    }
+    @keyframes clickBlipBack {
+        from {font-weight: 300;}
+        to {font-weight: 100;}
+    }
+
+    .click-me {
+        display: inline;
+        position: absolute;
+        top: 1rem;
+        left: -5rem; 
+        font-size: 0.8rem;
+        animation: clickBlip 0.5s linear infinite;
+        animation: clickBlipBack 0.5s linear infinite;
+    }
+
+    .click-stop {
         display: none;
     }
 
@@ -368,6 +394,12 @@
     /* ----- BIG CARD HEADER ----- */
      .big-card h4 {
         font-size: 2vw;
+    }
+
+    .click-me {
+        top: 2rem;
+        left: -7rem; 
+        font-size: 1.1rem;
     }
 }
 

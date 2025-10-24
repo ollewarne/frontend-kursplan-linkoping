@@ -9,6 +9,7 @@ class Kunskaper extends HTMLElement {
     <i class="ri-poker-hearts-line"></i>
 
     <div id="larandemal" class="kunskaper-container">
+        <h2 class="desktop-h2">LÄRANDEMÅL<span class="x">x</span><span class="kunskap">KUNSKAPER</span></h2>
         <h2>LÄRANDEMÅL</h2>
         <p>Vid avslutad kurs med godkända <span>resultat, kan den studerande:</span></p>
     </div>
@@ -28,9 +29,9 @@ class Kunskaper extends HTMLElement {
                 <h4>JAVASCRIPT & INTERAKTIVITET</h4>
             </div>
 
-            <div class="test-pos"></div>
+       
             <!------- open display ------->
-            <div id="purple-open" class="purple-test card big-card color-purple card-hide">
+            <div id="purple-open" class="card big-card color-purple card-hide first-show">
                 <i class="ri-subtract-fill"></i>
                 <h4>JAVASCRIPT & INTERAKTIVITET</h4>
                 <ul>
@@ -91,6 +92,8 @@ class Kunskaper extends HTMLElement {
                     <li>Skapa och underhålla strukturerad dokumentation för funktioner, komponenter och API-anrop</li>
                 </ul>
             </div>
+
+            <div class="grid-line"></div>
         </div> <!-- END: cards-grid -->
     </div> <!-- END: kunskaper-cards -->
     </section> <!-- END: kunskaper -->
@@ -99,17 +102,23 @@ class Kunskaper extends HTMLElement {
 }
 customElements.define('kunskaper-cmp', Kunskaper);
 
+
+
 // SCRIPT: OPENING CARDS
 // purple card
 const purpleCard = document.getElementById('purple-card')
 const purpleOpen = document.getElementById('purple-open')
 
 purpleCard.addEventListener('click', () => {
-  purpleOpen.classList.add('card-show');
+    purpleOpen.classList.add('card-show');
+    greenOpen.classList.remove('card-show');
+    pinkOpen.classList.remove('card-show');
+    orangeOpen.classList.remove('card-show');
+
 });
 
 purpleOpen.addEventListener('click', () => {
-  purpleOpen.classList.remove('card-show');
+    purpleOpen.classList.remove('card-show');
 });
 
 // green card 
@@ -117,11 +126,16 @@ const greenCard = document.getElementById('green-card')
 const greenOpen = document.getElementById('green-open')
 
 greenCard.addEventListener('click', () => {
-  greenOpen.classList.add('card-show');
+    greenOpen.classList.add('card-show');
+    pinkOpen.classList.remove('card-show');
+    orangeOpen.classList.remove('card-show');
+    purpleOpen.classList.remove('card-show', 'first-show');
+
 });
 
 greenOpen.addEventListener('click', () => {
-  greenOpen.classList.remove('card-show');
+    greenOpen.classList.remove('card-show');
+    purpleOpen.classList.add('first-show');
 });
 
 // pink card
@@ -129,11 +143,15 @@ const pinkCard = document.getElementById('pink-card')
 const pinkOpen = document.getElementById('pink-open')
 
 pinkCard.addEventListener('click', () => {
-  pinkOpen.classList.add('card-show');
+    pinkOpen.classList.add('card-show');
+    orangeOpen.classList.remove('card-show');
+    purpleOpen.classList.remove('card-show', 'first-show');
+    greenOpen.classList.remove('card-show');
 });
 
 pinkOpen.addEventListener('click', () => {
-  pinkOpen.classList.remove('card-show');
+    pinkOpen.classList.remove('card-show');
+    purpleOpen.classList.add('first-show');
 });
 
 // orange card 
@@ -141,9 +159,13 @@ const orangeCard = document.getElementById('orange-card')
 const orangeOpen = document.getElementById('orange-open')
 
 orangeCard.addEventListener('click', () => {
-  orangeOpen.classList.add('card-show');
+    orangeOpen.classList.add('card-show');
+    purpleOpen.classList.remove('card-show', 'first-show');
+    greenOpen.classList.remove('card-show');
+    pinkOpen.classList.remove('card-show');
 });
 
 orangeOpen.addEventListener('click', () => {
-  orangeOpen.classList.remove('card-show');
+    orangeOpen.classList.remove('card-show');
+    purpleOpen.classList.add('first-show');
 });

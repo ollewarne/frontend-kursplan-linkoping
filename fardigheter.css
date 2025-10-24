@@ -32,8 +32,8 @@
 
 .fardigheter-big-box > i {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 1rem;
+  right: 1rem;
   font-size: 1.5rem;
   color: var(--Eerie-black);
   font-weight: 1000;
@@ -82,8 +82,8 @@
   font-size: 1.1rem;
 }
 
-.yellow-fardigheter {
-  background-color: var(--Mustard);
+.red-fardigheter {
+  background-color: var(--Persian-red);
 }
 
 .blue-fardigheter {
@@ -94,6 +94,6 @@
   background-color: var(--Emerald);
 }
 
-.red-fardigheter {
-  background-color: var(--Persian-red);
+.purple-fardigheter {
+  background-color: var(--Chrysler-blue);
 }

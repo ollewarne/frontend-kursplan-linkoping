@@ -47,7 +47,7 @@ Below is a picture of the colors we chose to use for the design.
 ![color palette for the page](./images/colorpalette.png)
 
 Below is a picture of the milestones we created for this project.
-!(./images/milestone.png)
+![Milestone](./images/milestone.png)
 
 Below is a picture of our Kanban project.
-!(./images/kanban.png)
+![Kanban board](./images/kanban.png)

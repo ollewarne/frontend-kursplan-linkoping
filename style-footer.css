@@ -12,9 +12,8 @@
 footer{
   background: var(--footer-bg);
   color: var(--footer-fg);
-  border-top: 1px solid var(--footer-border-soft);
-  margin-top: 2rem;
-  padding: 1.25rem 12px;
+  border-top: none;
+
 }
 footer img{
   display:block;
@@ -120,56 +119,44 @@ footer img{
 
 
 
-
-.s1 {
- 
-  text-justify: center;
-  color: whitesmoke;
-  margin-bottom: 30px; 
-  font-size: 16px;
-  white-space: nowrap;
-  text-align-last: center;
-}
-
 .a1 {
-  text-align: left , center;
+  text-align: left;
   color: whitesmoke;
   margin-bottom: 30px; 
   font-size: 16px;
-  text-justify: auto;
-  white-space: nowrap;
+  
   text-align-last: center; 
 }
  .a1 .p1 {
-  text-align: left , center;
+  text-align: left;
   color: whitesmoke;
   margin-bottom: 30px; 
   font-size: 16px;
-  text-justify: left, center;
  
 }
 
 .a1 .ul1 {
-  text-align: left , center;
+  
   color: whitesmoke;
   margin-bottom: 30px; 
   font-size: 16px;
-    margin-left: 5px;
-    text-align: left; 
-  text-justify: left, center;
-   white-space: nowrap;
-  text-align-last: center; 
+
+  list-style-position: inside; 
+  margin-left: 0;              
+  padding-left: 0;            
+}
+.a1 .ul  li {
+  margin-left: -10px; 
 }
 
 .a2 {
-   text-align: left;
+   text-align: center;
   padding-left: 2px;
   text-align: center;
   color: whitesmoke;
   margin-bottom: 30px; 
   font-size: 16px;
-  text-justify: auto;
-  
+
   text-align-last: center; 
 }
 
@@ -182,10 +169,17 @@ footer img{
   width: 80%;
  
   border-radius: 1px;
-    margin-left: 35px;  
-  margin-right: 35px; 
-  margin-bottom: 3px;
+  margin: 3px auto;
   
+}
+
+.s1 {
+
+  color: whitesmoke;
+  margin-bottom: 30px; 
+  font-size: 16px;
+  text-align: center;
+  text-align-last: center;
 }
 
 

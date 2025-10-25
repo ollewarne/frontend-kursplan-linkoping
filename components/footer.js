@@ -1,17 +1,15 @@
 
-class Footer extends HTMLElement {
+class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <nav class="parent">
-        <div class="divFooter"></div>
-        <div class="">
+      <footer>
+        <div class="footer-content">
           <img src="images/chas-academy-logo.png" alt="Chas Academy" class="logo-img">
+          <p class="footer-text">© 2025 Chas Academy. All rights reserved.</p>
         </div>
-        <div class="divFooter">
-          <i class="" aria-hidden="true"></i>
-        </div>
-      </nav>
+      </footer>
     `;
   }
 }
-customElements.define('footer', Footer);
+
+customElements.define('site-footer', SiteFooter);

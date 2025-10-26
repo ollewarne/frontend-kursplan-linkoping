@@ -2,7 +2,7 @@ class Formativ extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <section class="formativ">
-        <h2 class="underline" id="bedomning">FORMATIV BEDÖMNING</h2>
+        <h2 class="underline">Formativ bedömning</h2>
         <p>Formativ bedömning utvärderar studerandes kunskaper och färdigheter löpande under kursens interaktiva
         lärandemoment. Syftet är att effektivisera bedömningen och samtidigt stödja lärandet. Den formativa
         bedömningen sker i samband med</p>

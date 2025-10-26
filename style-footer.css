@@ -1,13 +1,5 @@
 
 
-:root{
-  --footer-bg: var(--Eerie-black, #0f1220);
-  --footer-fg: #eef2ff;
-  --footer-muted: #a5b4fc;
-  --footer-border-strong: rgba(235,229,229,.95);
-  --footer-border-soft: rgba(255,255,255,0.08);
-}
-
 
 footer{
   background: var(--footer-bg);
@@ -26,7 +18,7 @@ footer img{
 
 .footer-text {
   text-align: center;
-  color: var(--footer-muted);
+ 
   font-size: 14px;
 }
 
@@ -103,7 +95,7 @@ footer img{
 
 
 .ss-namespace footer p {
-  color: var(--ss-muted);
+ 
   margin: 0.35rem auto;
   max-width: 80ch;
 }
@@ -121,7 +113,7 @@ footer img{
 
 .a1 {
   text-align: left;
-  color: whitesmoke;
+ 
   margin-bottom: 30px; 
   font-size: 16px;
   
@@ -129,7 +121,7 @@ footer img{
 }
  .a1 .p1 {
   text-align: left;
-  color: whitesmoke;
+ 
   margin-bottom: 30px; 
   font-size: 16px;
  
@@ -137,7 +129,6 @@ footer img{
 
 .a1 .ul1 {
   
-  color: whitesmoke;
   margin-bottom: 30px; 
   font-size: 16px;
 
@@ -153,7 +144,7 @@ footer img{
    text-align: center;
   padding-left: 2px;
   text-align: center;
-  color: whitesmoke;
+
   margin-bottom: 30px; 
   font-size: 16px;
 
@@ -175,7 +166,7 @@ footer img{
 
 .s1 {
 
-  color: whitesmoke;
+
   margin-bottom: 30px; 
   font-size: 16px;
   text-align: center;

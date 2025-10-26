@@ -1,0 +1,71 @@
+.theme-toggle {
+  position: fixed;
+  top: 92px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease,
+              background 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
+  z-index: 5000;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.theme-toggle:active {
+  transform: translateY(0);
+}
+
+.theme-toggle::before {
+  content: "🌙";
+  font-size: 18px;
+  line-height: 1;
+}
+
+:root:has(#theme-toggle:checked) .theme-toggle {
+  background: #ffffff;
+  border-color: #e6e2d9;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+:root:has(#theme-toggle:checked) .theme-toggle::before {
+  content: "☀️";
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #ef8a17;
+  outline-offset: 2px;
+}
+
+
+
+/*logo*/
+:root:has(#theme-toggle:checked) nav-bar .logo-img {
+  filter: brightness(0) saturate(100%)
+          invert(61%) sepia(86%) saturate(705%)
+          hue-rotate(354deg) brightness(99%) contrast(102%);
+}
+
+body {
+  position: relative;
+  padding-top: 65px;
+  background-color: var(--Ivory);
+}
+.divNav,.divHambureger,.menu-links{ 
+  background: var(--Ivory);
+}
+.divHambureger,.menu-links a,.divHambureger i,.parent-Nav{
+  color: var(--Eerie-black);
+}
+

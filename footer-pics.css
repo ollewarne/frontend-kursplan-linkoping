@@ -99,6 +99,7 @@
 
   .dev-pics img:hover {
     opacity: 1;
+    cursor: pointer;
   }
 
   .dev-pics .dev-circle:hover {

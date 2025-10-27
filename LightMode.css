@@ -121,3 +121,31 @@ body {
   border: 2px solid var(--Eerie-black) !important;
 }
 
+
+/* --------------------- KUNSKAPER --------------------- */
+
+
+/* kunskaper sektion: line svart */
+:root:has(#theme-toggle:checked) .grid-line {
+  border-top: 1px solid var(--Eerie-black);
+}
+
+:root:has(#theme-toggle:checked) .small-card h4 {
+  color: white !important;
+}
+
+:root:has(#theme-toggle:checked) .small-card:hover h4 {
+  color: var(--Eerie-black) !important;
+}
+
+:root:has(#theme-toggle:checked) .purple-clicked h4,
+:root:has(#theme-toggle:checked) .green-clicked h4,
+:root:has(#theme-toggle:checked) .pink-clicked h4,
+:root:has(#theme-toggle:checked) .orange-clicked h4 {
+  color: var(--Eerie-black) !important;
+}
+
+
+
+
+

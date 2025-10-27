@@ -1,4 +1,35 @@
-.dev-pics h3 {
+/* --------------------------------------------- */
+/* ---------- STYLING TILL PDF-LINK ------------ */
+/* --------------------------------------------- */
+
+.pdf-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 1px solid var(--Tangerine);
+    border-bottom: 1px solid var(--Tangerine);
+    margin-top: 15%;
+    font-weight: 500;
+}
+
+.pdf-link:hover {
+  font-weight: 600;
+  color: var(--Tangerine);
+  border-top: 1px solid var(--White);
+  border-bottom: 1px solid var(--White);
+}
+
+
+
+/* --------------------------------------------- */
+/* --------------- FOOTER-PICS ----------------- */
+/* --------------------------------------------- */
+
+
+.dev-h3 {
     text-align: center;
     padding: 10% 0 5% 0;
     font-size: 1.2rem;
@@ -42,3 +73,26 @@
 #dev-yellow { background-color: var(--Mustard);}
 
 #dev-red { background-color: var(--Persian-red);}
+
+
+/* --------------------------------------------- */
+/* ----------------- DESKTOP ------------------- */
+/* --------------------------------------------- */
+
+
+@media (width > 800px) {
+
+  .dev-h3 {
+    padding-bottom: 2%;
+}
+
+  .dev-pics {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dev-pics .dev-circle {
+  width: 6vw;
+  margin: 0 1vw 0 1vw;
+  }
+}

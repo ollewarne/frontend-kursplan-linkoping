@@ -438,19 +438,4 @@
 
 
 
-/* --------------------------------------------- */
-/* ---------- STYLING TILL PDF-LINK ------------ */
-/* --------------------------------------------- */
 
-.pdf-link {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-self: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-top: 1px solid var(--Tangerine);
-    border-bottom: 1px solid var(--Tangerine);
-    margin-top: 15%;
-    font-weight: 500;
-}

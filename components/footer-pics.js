@@ -1,9 +1,9 @@
 class FooterPicComp extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <section class="dev-pics">
+        <h3 class="dev-h3">DEVELOPERS</h3>
 
-            <h3>DEVELOPERS</h3>
+        <section class="dev-pics">
 
             <!-- Circles: row 1 -->
             <div class="dev-pics-row-1">

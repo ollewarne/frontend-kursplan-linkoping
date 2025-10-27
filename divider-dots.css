@@ -11,3 +11,12 @@
     border-radius: 50%;
     margin: 15% 2% 15% 2%
 }
+
+
+/* REMOVE DIVIDER DOTS DESKTOP  */
+
+@media (width > 800px) {
+    .divider-dots {
+        display: none;
+    }
+}

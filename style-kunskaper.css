@@ -319,22 +319,23 @@
 
     .purple-clicked{
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-        background-color: var(--Eerie-black);
+        /* background-color: var(--Eerie-black); */
+        background-color: transparent;
         border: 2px solid var(--Chrysler-blue)
     }
     .green-clicked{
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-        background-color: var(--Eerie-black);
+        background-color: transparent;
         border: 2px solid var(--Emerald)
     }
     .pink-clicked{
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-        background-color: var(--Eerie-black);
+        background-color: transparent;
         border: 2px solid var(--Bittersweet)
     }
     .orange-clicked{
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-        background-color: var(--Eerie-black);
+        background-color: transparent;
         border: 2px solid var(--Tangerine)
     }
 

@@ -55,15 +55,9 @@ footer img{
   margin: 0.5rem auto;
   max-width: 70ch;
   line-height: 1.55;
-}
 
-.colored-dots{
-  text-align: center;   
-  font-size: 80px;      
-  letter-spacing: -3px; 
-   margin-right: 1px; 
-  margin: 0px 0;  
-   
+
+
     color: var(  --Chrysler-blue);  
     color: var(--Emerald); 
     color: var( --Bittersweet); 
@@ -73,7 +67,8 @@ footer img{
     color: var(--Tangerine); 
     color: var(--Persian-red); 
     color: var(--White);  
-}
+
+
 .yellow { color: #f6d046;}
 .pink   { color: #FF69B4; }
 .purple { color: #9510E0; }
@@ -83,6 +78,7 @@ footer img{
 .green  { color: #6ec97b; } 
 .white  { color: #ffffff; }
 .black  { color: #1e2024; }
+}
 
 .ss-namespace .linje {
   height: 2px;
@@ -177,16 +173,35 @@ footer img{
   .ss-namespace p { padding: 0 1rem; }
   .ss-namespace .linje { width: 85%; }
 }
-    .article {
-    display: flex; 
+
+   .article {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
-}
+
+  }
 
 @media (min-width: 768px) {
-    .article {
-        flex-direction: row; 
-       
-    }
+   .article {
+    flex-direction: row; /* Artiklar + cirkel i rad */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+
+
+ 
+
 }
+
+
+
+ .header-intro .colored-dots{
+  
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  transition: all 0.5s ease;
+}   

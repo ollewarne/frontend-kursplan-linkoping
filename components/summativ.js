@@ -2,12 +2,17 @@ class Summative extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
          <section class="summativ mobileFirst">
-            <h1 id="kunskap">KUNSKAPSKONTROLL</h1>
+            <div class="kunskap-wrap">
+                <h1 id="kunskap">
+                    <span class="kun-top">KUNSKAPS<span class="kun-dash">-</span></span>
+                    <span class="kun-bottom">KONTROLL</span>
+                </h1>
+            </div>
             <div class="mobile-align">
-            <h2 class="underline">SUMMATIV BEDÖMNING</h2>
-            <p>Summativ bedömning utvärderar studerandes kunskaper och färdigheter retroaktivt för att sammanfatta vad
-             den studerande kan vid examinationstillfället. Den summativa bedömningen täcker samtliga kursmål och sker vid
-            följande avgränsade examinationstillfällen:</p>
+                <h2 class="underline">SUMMATIV BEDÖMNING</h2>
+                <p>Summativ bedömning utvärderar studerandes kunskaper och färdigheter retroaktivt för att sammanfatta vad
+                den studerande kan vid examinationstillfället. Den summativa bedömningen täcker samtliga kursmål och sker vid
+                följande avgränsade examinationstillfällen:</p>
             </div>
             <div class="grid-summativ">
                 <div class="mobile-layout" id="summativ01">
@@ -23,13 +28,13 @@ class Summative extends HTMLElement {
                     <p>En gruppinlämning där varje studerandes individuella insats bedöms.</p>    
                 </div>
             </div>
-            </section>
-            <section class="formativ mobileFirst">
+        </section>
+        <section class="formativ mobileFirst">
             <div class="mobile-align">
-            <h2 class="underline">FORMATIV BEDÖMNING</h2>
-            <p>Formativ bedömning utvärderar studerandes kunskaper och färdigheter löpande under kursens interaktiva
-            lärandemoment. Syftet är att effektivisera bedömningen och samtidigt stödja lärandet. Den formativa
-            bedömningen sker i samband med</p>
+                <h2 class="underline">FORMATIV BEDÖMNING</h2>
+                <p>Formativ bedömning utvärderar studerandes kunskaper och färdigheter löpande under kursens interaktiva
+                lärandemoment. Syftet är att effektivisera bedömningen och samtidigt stödja lärandet. Den formativa
+                bedömningen sker i samband med</p>
             </div>
             <div class="formativ-grid">
                 <div>

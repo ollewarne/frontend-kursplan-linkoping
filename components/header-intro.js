@@ -2,7 +2,7 @@ class HeaderIntro extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
  <section class="header-intro" id="intro">
-            <div class="colored-dots">
+            <div class="colored-dots top-dots">
                     <div class="header-dot-yellow"></div>
                     <div class="header-dot-pink"></div>
                     <div class="header-dot-purple"></div>
@@ -10,10 +10,22 @@ class HeaderIntro extends HTMLElement {
                     <div class="header-dot-red"></div>
                     <div class="header-dot-orange"></div>
                     <div class="header-dot-green"></div>
-                </p>
             </div>
 
-                <h1>FRONTEND <span>x</span> KURSPLAN</h1>
+                <h1>FRONTEND <span>x</span> <img id="header-chasacademy-logo-desktop" src="images/chas-academy-logo.png"> <h1 id"header-text-kursplan"> KURSPLAN</h1>
+
+             <div class="colored-dots bottom-dots">
+                    <div class="header-dot-yellow"></div>
+                    <div class="header-dot-pink"></div>
+                    <div class="header-dot-purple"></div>
+                    <div class="header-dot-blue"></div>
+                    <div class="header-dot-red"></div>
+                    <div class="header-dot-orange"></div>
+                    <div class="header-dot-green"></div>
+                    
+                    
+
+            </div>
 
                 <p class="header-intro-text">
                     Denna kurs fokuserar på frontendutveckling med JavaScript, inklusive skapandet av dynamiska och interaktiva webbapplikationer. 

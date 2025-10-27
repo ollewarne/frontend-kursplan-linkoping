@@ -3,7 +3,9 @@
 .assessment {
   width: 100%;
   max-width: 400px;
-  border-radius: 12px;
+  border-radius: 16px;
+  margin: 80px auto;
+  padding: 40px 20px;
 }
 
 /* Styling icons for bedomning section */
@@ -25,16 +27,17 @@
   font-size: 37px;
 }
 
-/* Title */
+/* Main Title */
 .assessment h2 {
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 24px;
   letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: var(--Dark-gray);
 }
 
-/* level blocks section styles */
+/* level blocks section styles (IG, G, VG) */
 
 .assessment .level {
   padding: 16px 0;
@@ -42,10 +45,20 @@
   text-align: center;
 }
 
+
 .assessment .level:first-of-type {
   border-top: none;
 }
 
+/* List for VG criteria */
+.assessment ul {
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cccccc;
+}
 
 /* Colors ONLY for the icon inside */
 .assessment .warning {
@@ -89,5 +102,11 @@
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
+.assessment p.subtitle {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
 
 

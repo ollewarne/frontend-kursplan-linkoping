@@ -145,7 +145,12 @@ body {
   color: var(--Eerie-black) !important;
 }
 
+/* --------------------- HEADER INTRO  --------------------- */
 
-
-
-
+:root:has(#theme-toggle:checked) #header-chasacademy-logo-desktop {
+  /* filter: brightness(0) saturate(100%)
+          invert(16%) sepia(87%) saturate(5718%)
+          hue-rotate(267deg) brightness(86%) contrast(122%); */
+          
+  filter: brightness(0) saturate(100%);
+}

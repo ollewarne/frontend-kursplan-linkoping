@@ -1,30 +1,38 @@
+body {
+  position: relative;
+  padding-top: 65px;
+}
+:root { 
+  --Ivory: #faf7ef; 
+  --Chrysler-blue: #5a21cd; 
+}
+
 .theme-toggle {
   position: fixed;
-  top: 92px;
-  right: 12px;
-  width: 40px;
-  height: 40px;
+  top: 14px;
+  right: 70px;
+  width: 30px;
+  height: 15px;
   padding: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
   cursor: pointer;
-  transition: transform 0.15s ease,
-              background 0.2s ease,
-              border-color 0.2s ease,
-              box-shadow 0.2s ease;
   z-index: 5000;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .theme-toggle:hover {
   transform: translateY(-1px);
 }
 
-.theme-toggle:active {
-  transform: translateY(0);
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--mustang);
+  outline-offset: 2px;
 }
 
 .theme-toggle::before {
@@ -33,39 +41,83 @@
   line-height: 1;
 }
 
-:root:has(#theme-toggle:checked) .theme-toggle {
-  background: #ffffff;
-  border-color: #e6e2d9;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
+/* När knappen är på */
 :root:has(#theme-toggle:checked) .theme-toggle::before {
   content: "☀️";
 }
-
-.theme-toggle:focus-visible {
-  outline: 2px solid #ef8a17;
-  outline-offset: 2px;
-}
-
-
-
 /*logo*/
-:root:has(#theme-toggle:checked) nav-bar .logo-img {
+ :root:has(#theme-toggle:checked) nav-bar .logo-img {
   filter: brightness(0) saturate(100%)
           invert(61%) sepia(86%) saturate(705%)
           hue-rotate(354deg) brightness(99%) contrast(102%);
+} 
+
+/*kunskaper-loggan */
+:root:has(#theme-toggle:checked) .kunskaper-logo {
+  filter: brightness(0) saturate(100%)
+          invert(16%) sepia(87%) saturate(5718%)
+          hue-rotate(267deg) brightness(86%) contrast(122%);
 }
 
-body {
-  position: relative;
-  padding-top: 65px;
-  background-color: var(--Ivory);
+:root:has(#theme-toggle:checked) body { 
+  background: var(--Ivory); 
 }
-.divNav,.divHambureger,.menu-links{ 
+
+
+/* bakgrunder */
+:root:has(#theme-toggle:checked) nav-bar .parent-Nav {
+  color: var(--Eerie-black);
+  background: var(--Ivory);
+  border-bottom: 1px solid #e6e2d9;
+}
+
+:root:has(#theme-toggle:checked) nav-bar .divNav {
   background: var(--Ivory);
 }
-.divHambureger,.menu-links a,.divHambureger i,.parent-Nav{
+
+:root:has(#theme-toggle:checked) nav-bar .divLogo {
+  background: var(--Ivory);
+}
+
+:root:has(#theme-toggle:checked) nav-bar .divHambureger {
+  background: var(--Ivory);
+}
+
+:root:has(#theme-toggle:checked) nav-bar .menu-links {
+  background: var(--Ivory);
+  border: 2px solid #e6e2d9;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+:root:has(#theme-toggle:checked) nav-bar .menu-links a {
   color: var(--Eerie-black);
+}
+
+/*hamburger- och X-ikon*/
+:root:has(#theme-toggle:checked) nav-bar .divHambureger i {
+  color: var(--Eerie-black) !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+/*all brödtext och rubriker svarta*/
+:root:has(#theme-toggle:checked) body,
+:root:has(#theme-toggle:checked) body :where(h1,h2,h3,h4,h5,h6,p,li,small,span,strong,em,blockquote,a) {
+  color: var(--Eerie-black) !important;
+  text-shadow: none !important;
+}
+
+/*divider-dots i Tangerine */
+:root:has(#theme-toggle:checked) .divider-dot {
+  background-color: var(--Tangerine) !important;
+  color: var(--Tangerine) !important; 
+  border-color: var(--Tangerine) !important; 
+}
+/* linjerna svarta */
+:root:has(#theme-toggle:checked) nav-bar .parent-Nav {
+  border-bottom: 1px solid var(--Eerie-black) !important;
+}
+
+:root:has(#theme-toggle:checked) nav-bar .menu-links {
+  border: 2px solid var(--Eerie-black) !important;
 }
 

@@ -57,7 +57,7 @@ footer img{
   line-height: 1.55;
 }
 
-.dot-row {
+.colored-dots{
   text-align: center;   
   font-size: 80px;      
   letter-spacing: -3px; 
@@ -166,7 +166,6 @@ footer img{
 
 .s1 {
 
-
   margin-bottom: 30px; 
   font-size: 16px;
   text-align: center;
@@ -177,4 +176,17 @@ footer img{
 @media (max-width: 520px) {
   .ss-namespace p { padding: 0 1rem; }
   .ss-namespace .linje { width: 85%; }
+}
+    .article {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row; 
+       
+    }
 }

@@ -51,6 +51,7 @@
   border-radius: 50%;
   margin: 0 2vw 0 2vw;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .dev-pics img {
@@ -84,7 +85,7 @@
 
   .dev-h3 {
     padding-bottom: 2%;
-}
+  }
 
   .dev-pics {
     display: flex;
@@ -95,4 +96,13 @@
   width: 6vw;
   margin: 0 1vw 0 1vw;
   }
+
+  .dev-pics img:hover {
+    opacity: 1;
+  }
+
+  .dev-pics .dev-circle:hover {
+    transform: scale(1.05);
+  }
+
 }

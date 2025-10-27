@@ -61,7 +61,6 @@ body{
 
 .divHambureger{
   grid-area:1 / 5 / 3 / 7;
-  background:var(--Eerie-black);
   display:flex;
   justify-content:flex-end;
   align-items:center;
@@ -76,10 +75,10 @@ body{
 
 .menu-links{
   position: absolute;
-  top: 65px;
-  left: 0;
+  top: 64px;
+  left: 15px;
   right: 0;         
-  width: 100%;
+  width: 92%;
   max-width: none;
   box-sizing: border-box;
   text-align: right;  
@@ -98,7 +97,7 @@ body{
   line-height: 1.35;           
   margin: 12px 0;                
   text-decoration: none;        
-  font-size: clamp(28px, 4.5vw, 28px); 
+  font-size: clamp(26px, 4.5vw, 28px); 
 }
 nav-bar .menu-links { display: none; }
 

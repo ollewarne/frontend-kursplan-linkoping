@@ -2,8 +2,16 @@
 
 .assessment {
   width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.assessment p.subtitle {
+  font-size: 1rem;
+  margin-bottom: 50px;
 }
 
 /* Styling icons for bedomning section */
@@ -12,10 +20,9 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background-color: #f5f5f5;
   margin-bottom: 10px;
   border: 2px solid transparent;
 }
@@ -25,27 +32,51 @@
   font-size: 37px;
 }
 
-/* Title */
+/* Main Title */
 .assessment h2 {
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 24px;
   letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: var(--Dark-gray);
 }
 
-/* level blocks section styles */
+/* Grid layout for the three levels */
+.assessment .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Each level box section styles (IG, G, VG) */
 
 .assessment .level {
-  padding: 16px 0;
+  padding: 30px 20px;
   border-top: 1px solid #e0e0e0;
   text-align: center;
 }
+
 
 .assessment .level:first-of-type {
   border-top: none;
 }
 
+.assessment ul {
+  text-align: left;
+  list-style: disc;
+  padding-left: 25px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.assessment ul li {
+  margin-bottom: 6px;
+}
 
 /* Colors ONLY for the icon inside */
 .assessment .warning {
@@ -61,6 +92,30 @@
   background-color: #f6d046
 }
 
+/* Responsive grid adjustments */
+
+.assessment .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-left: 1px solid var(--color-border);
+}
+
+.assessment .level {
+  padding: 30px 25px;
+  text-align: center;
+  border-right: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assessment .level:last-child {
+  border-right: none;
+}
+
+.assessment .level:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
 /* Inside sections and text styling */
 
 .assessment ul {
@@ -69,6 +124,10 @@
   margin-left: 20px;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.assessment ul li {
+  margin-bottom: 6px;
 }
 
 /* TEXT */
@@ -90,4 +149,58 @@
   transition: transform 0.3s ease;
 }
 
+.assessment p.subtitle {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
 
+
+/* Responsive design with media queries for mobileg */
+@media (max-width: 810px) {
+  
+  .assessment {
+    border-radius: 10px;
+    padding: 30px 15px;
+    max-width: 100%;
+  }
+    .assessment .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assessment .level {
+    padding: 20px 15px;
+  }
+
+  .assessment h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}
+
+/* Enabling interactive hover effects or animations */
+
+.assessment .level:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.assessment .level.trophy-card {
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.assessment:hover .level.trophy-card {
+  transform: translateX(40px);
+}

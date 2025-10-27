@@ -3,7 +3,9 @@ class NavBar extends HTMLElement {
     this.innerHTML = `
       <nav class="parent-Nav">
         <div class="divNav">
-        
+        <input id="theme-toggle" type="checkbox" hidden>
+        <label for="theme-toggle" class="theme-toggle" aria-label="Byt tema"></label>
+
       <div class="menu-links">
         <a href="#intro">INTRO</a>
         <a href="#larandemal">LÄRANDEMÅL</a>

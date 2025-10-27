@@ -7,9 +7,24 @@
     margin: 0 auto;
 }
 
+.kunskap-wrap {
+    text-align: center;
+}
+
+#kunskap {
+    display: inline-block;
+    text-align: left;
+    line-height: 1;
+}
+
+#kunskap .kun-top, #kunskap .kun-bottom {
+    display: block;
+}
+
 .mobileFirst h1 {
     margin-bottom: 0%;
 }
+
 
 .mobileFirst h2 {
     margin-bottom: 0%;
@@ -57,7 +72,7 @@
 }
 
 #summativ01 {
-    background-color: var(--Persian-red);
+    background-color: var(--Bittersweet);
     
 }
 

@@ -1,5 +1,8 @@
 class BedomningSection extends HTMLElement {
   connectedCallback() {
+     const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "./components/bedomningSection.css";
     this.innerHTML = `
       <section class="assessment" id="bedomning">
         <h2>BEDÖMNING</h2>

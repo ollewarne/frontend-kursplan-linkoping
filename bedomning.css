@@ -2,11 +2,13 @@
 
 .assessment {
   width: 100%;
-  max-width: 400px;
-  border-radius: 16px;
+  max-width: 1000px;
   margin: 80px auto;
   padding: 40px 20px;
+  border-radius: 16px;
+  text-align: center;
 }
+
 
 /* Styling icons for bedomning section */
 
@@ -53,6 +55,8 @@
 /* List for VG criteria */
 .assessment ul {
   text-align: left;
+  list-style: disc;
+  padding-left: 20px;
   margin-top: 12px;
   margin-left: 15px;
   font-size: 0.9rem;
@@ -108,5 +112,31 @@
   margin-bottom: 50px;
 }
 
+
+/* Responsive design with media queries for mobileg */
+@media (max-width: 810px) {
+  
+  .assessment {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .assessment h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}
 
 

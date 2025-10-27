@@ -1,31 +1,31 @@
 /* SECTION HEADER-INTRO STYLING */
 
 .header-intro {
-  color: white
+  color: white;
 }
 
 /* header-intro -> colored-dots: setting color for dots */
 .header-dot-yellow {
   background-color: var(--Mustard);
-} 
+}
 .header-dot-pink {
   background-color: var(--Bittersweet);
 }
 .header-dot-purple {
   background-color: var(--Chrysler-blue);
-} 
+}
 .header-dot-blue {
   background-color: var(--Blue-gray);
-} 
+}
 .header-dot-red {
   background-color: var(--Persian-red);
-} 
+}
 .header-dot-orange {
   background-color: var(--Tangerine);
-} 
+}
 .header-dot-green {
   background-color: var(--Emerald);
-} 
+}
 
 .header-intro .colored-dots {
   display: flex;
@@ -36,13 +36,15 @@
   padding-top: 10%;
 }
 
-.header-intro .colored-dots div{
+.header-intro .colored-dots div {
   width: 3vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
   margin: auto;
 }
-
+.bottom-dots {
+  display: none !important;
+}
 /* TEXT */
 
 .header-intro h1 {
@@ -72,7 +74,7 @@
   justify-content: center;
 }
 
-.header-student-info .student-circles div{
+.header-student-info .student-circles div {
   width: 18vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -82,7 +84,7 @@
   margin: 0 1% 0 1%;
 }
 
-.header-student-info .student-circles div p{
+.header-student-info .student-circles div p {
   font-weight: 600;
 }
 
@@ -112,3 +114,98 @@
   width: 90vw;
   margin: 5% auto 20% auto;
 }
+#header-chasacademy-logo-desktop{
+  /* filter: drop-shadow(0 0 2px rgba(0,0,0,0.6)); */
+  filter: none;
+}
+
+/* ------------------------------------------------------------- */
+/*                        större än 1200 px */
+/* ------------------------------------------------------------- */
+
+@media (width > 1200px){
+  #header-chasacademy-logo-desktop {
+    width: 100px;
+    margin-top: 1.5vw;
+    filter: none;
+    opacity: 1;
+  }
+  .top-dots {
+    display: none !important;
+  }
+  .bottom-dots {
+    display: flex !important;
+  }
+  .header-intro-text {
+    justify-content: center;
+    display: flex;
+  }
+  .header-intro .colored-dots {
+    display: none;
+  }
+  .header-student-info h3 {
+    display: none;
+  }
+  .header-student-info {
+    margin-top: 20px;
+  }
+  .header-outro-text {
+    justify-content: center;
+    display: flex;
+  }
+  .header-intro .colored-dots {
+    padding-top: 0;
+    padding-bottom: 1%;
+    width: 10%;
+  }
+  .header-intro .colored-dots div {
+    width: 0.5vw;
+  }
+  .header-intro-text {
+    font-size: 22px;
+    width: 33%;
+  }
+  .header-intro h1 span {
+    color: var(--Tangerine);
+    font-weight: bold;
+  }
+  .header-student-info .student-circles div{
+    border-radius: 10%;
+    width: 5vw;
+    margin: 5px;
+    justify-content: center;
+
+  }
+  .header-student-info .student-circles .student-circle-orange{
+   transform: translateX(-140px);
+  }
+  .header-student-info .student-circles p{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .header-student-info .student-circles .student-circle-pink{
+    transform: translateX(140px);
+}
+.header-student-info .student-text {
+  font-weight: lighter;
+    font-size: 22px;
+    width: 33%;
+    margin-top: 20px;
+  }
+.header-outro-text{
+  margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 33%;
+
+  }
+}
+/* ------------------------------------------------------------- */
+/*                        Mindre än 1200 px */
+/* ------------------------------------------------------------- */
+
+@media (width < 1200px){
+  #header-chasacademy-logo-desktop {
+    display: none;
+  }
+  }

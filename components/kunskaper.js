@@ -125,6 +125,14 @@ purpleCard.addEventListener('click', () => {
   pinkOpen.classList.remove('card-show');
   orangeOpen.classList.remove('card-show');
 
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    // Remove small-card shadow when big-card OPEN
+    purpleCard.style.boxShadow = 'none';
+    pinkCard.style.boxShadow = 'none';
+    orangeCard.style.boxShadow = 'none';
+  }
+
+
   if (window.matchMedia("(min-width: 600px)").matches) { 
     // Add clicked styling
     purpleCard.classList.add('purple-clicked');
@@ -141,6 +149,10 @@ purpleOpen.addEventListener('click', () => {
   if (window.matchMedia("(max-width: 600px)").matches) {
     // Close big card
     purpleOpen.classList.remove('card-show');
+    // Add small-card shadow when big-card CLOSED
+    purpleCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    pinkCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    orangeCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
   };
 });
 
@@ -157,6 +169,13 @@ greenCard.addEventListener('click', () => {
   pinkOpen.classList.remove('card-show');
   orangeOpen.classList.remove('card-show');
   purpleOpen.classList.remove('card-show', 'first-show'); // Remove desktop landing-text
+
+   if (window.matchMedia("(max-width: 600px)").matches) {
+    // Remove small-card shadow when big-card OPEN
+    purpleCard.style.boxShadow = 'none';
+    pinkCard.style.boxShadow = 'none';
+    orangeCard.style.boxShadow = 'none';
+  }
 
   if (window.matchMedia("(min-width: 600px)").matches) { 
     // Add clicked styling
@@ -176,6 +195,10 @@ greenOpen.addEventListener('click', () => {
     greenOpen.classList.remove('card-show');
     // Add desktop landing-text
     purpleOpen.classList.add('first-show');
+    // Add small-card shadow when big-card CLOSED
+    purpleCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    pinkCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    orangeCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
   };
 });
 
@@ -192,6 +215,13 @@ pinkCard.addEventListener('click', () => {
   orangeOpen.classList.remove('card-show');
   purpleOpen.classList.remove('card-show', 'first-show'); // Remove desktop landing-text
   greenOpen.classList.remove('card-show');
+
+   if (window.matchMedia("(max-width: 600px)").matches) {
+    // Remove small-card shadow when big-card OPEN
+    purpleCard.style.boxShadow = 'none';
+    pinkCard.style.boxShadow = 'none';
+    orangeCard.style.boxShadow = 'none';
+  }
 
   if (window.matchMedia("(min-width: 600px)").matches) { 
     // Add clicked styling
@@ -211,6 +241,10 @@ pinkOpen.addEventListener('click', () => {
     pinkOpen.classList.remove('card-show');
     // Add desktop landing-text
     purpleOpen.classList.add('first-show');
+    // Add small-card shadow when big-card CLOSED
+    purpleCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    pinkCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    orangeCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
   };
 });
 
@@ -227,6 +261,13 @@ orangeCard.addEventListener('click', () => {
   purpleOpen.classList.remove('card-show', 'first-show'); // Remove desktop landing-text
   greenOpen.classList.remove('card-show');
   pinkOpen.classList.remove('card-show');
+
+   if (window.matchMedia("(max-width: 600px)").matches) {
+    // Remove small-card shadow when big-card OPEN
+    purpleCard.style.boxShadow = 'none';
+    pinkCard.style.boxShadow = 'none';
+    orangeCard.style.boxShadow = 'none';
+  }
 
   if (window.matchMedia("(min-width: 600px)").matches) { 
     // Add clicked styling
@@ -246,5 +287,9 @@ orangeOpen.addEventListener('click', () => {
     orangeOpen.classList.remove('card-show');
     // Add desktop landing-text
     purpleOpen.classList.add('first-show');
+    // Add small-card shadow when big-card CLOSED
+    purpleCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    pinkCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
+    orangeCard.style.boxShadow = '-1px 1px 4px rgb(0 0 0 / 0.5)';
   };
 });

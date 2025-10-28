@@ -145,6 +145,17 @@ body {
   color: var(--Eerie-black) !important;
 }
 
+
+/* Styling open-card in mobile-view */ 
+@media (width < 600px) {
+  :root:has(#theme-toggle:checked) .big-card h4,
+  :root:has(#theme-toggle:checked) .big-card li,
+  :root:has(#theme-toggle:checked) .small-card:hover h4 {
+    color: white !important;
+  }
+}
+
+
 /* --------------------- HEADER INTRO  --------------------- */
 
 :root:has(#theme-toggle:checked) #header-chasacademy-logo-desktop {

@@ -1,0 +1,45 @@
+.destop-fardigheter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fardigheter-section-wrapper {
+  width: 90%;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.fardigheter-grid {
+  display: grid;
+  gap: 1em;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  min-width: 33%;
+}
+
+.fardigheter-grid > div {
+  padding: 1em;
+  min-width: 40%;
+  font-size: .9em;
+}
+
+.big-div {
+  grid-column: 1 / 3;
+}
+
+.desktop-fardigheter-title, .orange-x {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.orange-x {
+  color: var(--Tangerine);
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.fardigheter-grid > div {
+  border: 2px solid red;
+}

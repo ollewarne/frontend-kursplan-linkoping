@@ -157,6 +157,10 @@ body {
   :root:has(#theme-toggle:checked) .small-card:hover h4 {
     color: white !important;
   }
+
+  :root:has(#theme-toggle:checked) .big-card {
+    box-shadow: -1px 1px 4px rgb(0 0 0 / 0.5);
+  }
 }
 
 

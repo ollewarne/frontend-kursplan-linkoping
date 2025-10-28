@@ -38,13 +38,40 @@ class Fardigheter extends HTMLElement {
             </ul>
           </div>
       </div>
+    </section>
+    <section class="desktop-fardigheter">
+    <div class="kunskaper-container fardigheter-container">
+        <h2 class="desktop-h2">LÄRANDEMÅL<span class="x">x</span><span class="kunskap">FÄRDIGHETER</span></h2>
+        <p>Vid avslutad kurs med godkända <span>resultat, kan den studerande:</span></p>
+    </div>
+      <section class='fardigheter-section-wrapper'>
+        <div class='fardigheter-grid'>
+          <div class='big-div pink-fardigheter'>Dokumentera en frontendkodbas genom att skriva detaljerade JSDoc-kommentarer och instruktioner
+              för hur man använder och testar JavaScript-funktioner och UI-komponenter.</div>
+          <div class="red-fardigheter">Skapa interaktiva webbapplikationer med JavaScript och DOM-manipulation.</div>
+          <div class="blue-fardigheter">Utföra enklare DOM-manipulation med JavaScript.</div>
+        </div>
+        <div class='fardigheter-grid'>
+          <div class="green-fardigheter">Implementera tillgänglighets- anpassningar enligt WCAG-standarder.</div>
+          <div class="purple-fardigheter">Designa och utveckla användarvänliga gränssnitt enligt UX/UI-principer.</div>
+          <div class='big-div orange-fardigheter'>Använda AI-baserade verktyg för att analysera och optimera JavaScript-kod, inklusive identifiering av
+              kodlukt och prestandaförbättringar.</div>
+        </div>
+        <div class='fardigheter-grid'>
+          <div class='big-div yellow-fardigheter'>Använda en agil arbetsmetodik för att planera och genomföra frontenduppgifter, inklusive att bryta ner
+              stories, arbeta i sprintar och hantera uppgifter i ett Kanban-board.</div>
+          <div class="pink-fardigheter">Skriva och genomföra automatiserade enhetstester för JavaScript-funktioner och UI-komponenter
+              med hjälp av Jest.</div>
+          <div class="blue-fardigheter">Integrera API:er för att visa och manipulera data i webbapplikationer.</div>
+        </div>
+      </section>
     </section>`;
   }
 }
 customElements.define('fardigheter-cmp', Fardigheter);
 
-const fardigheterWrapper = document.querySelector(".wrapper-fardigheter");
-fardigheterWrapper.addEventListener('click', (event) => {
+function handleEvent(event) {
+  if (document.body.clientWidth > 600) return;
   if (event.target.classList.contains("wrapper-fardigheter")) return; // stop console errors from clicking the wrapper element
   if ([...event.target.classList].includes("box-fardigheter")) {
     event.target.nextElementSibling.classList.add("visible")
@@ -56,4 +83,7 @@ fardigheterWrapper.addEventListener('click', (event) => {
   } else {
     event.target.closest('.fardigheter-big-box').classList.remove('visible');
   }
-});
+}
+
+const fardigheterWrapper = document.querySelector(".wrapper-fardigheter");
+fardigheterWrapper.addEventListener('click', handleEvent);

@@ -99,7 +99,7 @@
 .fardigheter-section-wrapper {
   width: 90%;
   display: flex;
-  gap: 5em;
+  gap: 4em;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -107,7 +107,7 @@
 .fardigheter-grid {
   display: grid;
   gap: 1.5em;
-  grid-template: repeat(2, 180px) / repeat(2, 250px);
+  grid-template: repeat(2, 180px) / repeat(2, 220px);
 }
 
 .fardigheter-grid > div {

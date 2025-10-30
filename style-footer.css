@@ -134,6 +134,7 @@ footer img{
 }
 .a1 .ul  li {
   margin-left: -10px; 
+  margin-bottom:.5rem; 
 }
 
 .a2 {
@@ -151,9 +152,9 @@ footer img{
 
 .linje {
   
-  height: 2px;
+  height: 3px;
   background-color: whitesmoke;
-  width: 80%;
+  width: 50%;
  
   border-radius: 1px;
   margin: 3px auto;
@@ -169,46 +170,42 @@ footer img{
 }
 
 
-@media (max-width: 520px) {
-  .ss-namespace p { padding: 0 1rem; }
-  .ss-namespace .linje { width: 85%; }
-}
-
+/* ========== Artikel-layout ========== */
    .article {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-
-  }
-
-@media (min-width: 768px) {
-  .article {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
     position: relative;
-     justify-content: space-between; 
-  }
-}
-  
 
+
+  }
+
+
+
+.article > article{
+  text-align:left;
+      flex:1 1 0;
+    padding:0 32px;
+}
+
+.colored-dots {
+  order: 1;                 /* hamnar mellan de två artiklarna */
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-self: center;
+  padding: 0 32px;
+  margin: 8px 0 12px;
+  position: static;         /* viktigt på mobil */
+  transform: none;
+}
 
  
-.article {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-
-
 
   .colored-dots .dot{
 
-  width:10px; height:10px; border-radius:50%;
+ order:1; width:10px; height:10px; border-radius:50%;
 }
 
 .colored-dots .yellow { background: #f6d046; }
@@ -220,32 +217,44 @@ footer img{
 .colored-dots .green  { background: #6ec97b; }
 
 
+@media (max-width: 520px) {
+  .ss-namespace p { padding: 0 1rem; }
+  .ss-namespace .linje { width: 85%; }
+}
+
 @media (min-width:768px){
   .article{ position:relative; display:flex; flex-direction:row; gap:60px; }
   .article > article{ flex:1 1 0; padding:0 32px; position:relative; z-index:1; }
+
   .article::before{
     content:"";
     position:absolute; left:50%; top:0; bottom:0;
-    width:1px; background:rgba(255,255,255,.15);
+    width:2px; height: 95%; background:rgba(255,255,255,.15);
     transform:translateX(-0.5px); z-index:0;
   }
-  
-   .colored-dots{
-    position:absolute;
-    top:-22px; left:50%;
-    transform:translateX(-50%);
-    margin:0;
+ 
+
+  .article {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+    position: relative;
+     justify-content: space-between; 
   }
-  
+
+    .colored-dots{
+    order: -1;                 /* före kolumnerna */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -22px;  
+    padding: 0;              /* justera höjd här */
+    margin: 0;
+  }
+  .colored-dots .dot{
+
+ order: -1; width:10px; height:10px; border-radius:50%; position: relative; top: -60px;
 }
-
-  .colored-dots{
- display:flex;
-  justify-content:center;
-  gap:10px;
-  margin:8px 0;
-
-
- }
-
-
+}

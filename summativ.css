@@ -1,0 +1,55 @@
+.mobileFirst { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#kunskap {
+    display: inline-block;
+    text-align: left;
+    line-height: 1;
+}
+
+#kunskap .kun-top, #kunskap .kun-bottom {
+    display: block;
+}
+
+.kunskap-wrap, .underline, .mobile-layout {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--Mustard);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.mobile-layout {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px 0 15px 0;
+}
+
+.mobile-layout h3, .mobile-layout p {
+    margin: 0% 0% 0% 5%;
+    text-align: left;
+}
+
+.sum-text {
+   margin: 0 5% 0 6%; 
+}
+
+#summativ01 {background-color: var(--Bittersweet);}
+
+#summativ02 {background-color: var(--Emerald);}
+
+#summativ03 {background-color: var(--Mustard);}
+
+#formative01 {background-color: var(--Chrysler-blue);}
+
+#formative02 {background-color: var(--Persian-red);}

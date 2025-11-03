@@ -1,0 +1,165 @@
+.section-fardigheter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  color: white;
+}
+
+.title-fardigheter {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+.wrapper-fardigheter {
+  width: 90vw;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 5vw;
+}
+
+.box-fardigheter > i {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: var(--Eerie-black);
+  opacity: 0.7;
+  font-weight: normal;
+}
+
+.fardigheter-big-box > i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--Eerie-black);
+  font-weight: 1000;
+}
+
+.box-fardigheter, .fardigheter-big-box {
+  cursor: pointer;
+}
+
+.box-fardigheter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.fardigheter-big-box {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 90vw;
+  height: 90vw;
+  border-radius: 1rem;
+}
+
+#fardigheter-big-box1.visible, #fardigheter-big-box2.visible, #fardigheter-big-box3.visible, #fardigheter-big-box4.visible {
+  display: flex;
+}
+
+.list-fardigheter {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.list-fardigheter > li {
+  padding: .5em .5em;
+}
+
+.kvalitet-box > .list-fardigheter {
+  font-size: 1.1rem;
+}
+
+/* desktop */
+
+.desktop-fardigheter {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+}
+.fardigheter-container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.fardigheter-section-wrapper {
+  width: 90%;
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fardigheter-grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template: repeat(2, 180px) / repeat(2, 220px);
+}
+
+.fardigheter-grid > div {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  min-width: 40%;
+  text-align: center;
+  border-radius: 1em;
+  font-weight: 600;
+  box-shadow: 4px 3px 6px var(--Eerie-black);
+}
+
+.big-div {
+  grid-column: 1 / 3;
+}
+
+/* colors */
+
+.red-fardigheter {
+  background-color: var(--Persian-red);
+}
+
+.blue-fardigheter {
+  background-color: var(--Blue-gray);
+}
+
+.green-fardigheter {
+  background-color: var(--Emerald);
+}
+
+.purple-fardigheter {
+  background-color: var(--Chrysler-blue);
+}
+
+.yellow-fardigheter {
+  background-color: var(--Mustard);
+}
+
+.pink-fardigheter {
+  background-color: var(--Bittersweet);
+}
+
+.orange-fardigheter {
+  background-color: var(--Tangerine);
+}
+
+@media (width > 600px) {
+  .section-fardigheter {
+    display: none;
+  }
+  .desktop-fardigheter {
+    display: flex;
+  }
+}

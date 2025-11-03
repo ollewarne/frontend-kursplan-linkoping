@@ -1,0 +1,66 @@
+.mobileFirst { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.mobile-align {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 5% 0 14%;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--Mustard);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.summativ h1 {
+    margin-bottom: 0%;
+}
+
+.summativ h2 {
+    margin-bottom: 0%;
+}
+
+.grid-summativ h3 {
+    margin-bottom: 0%;
+}
+
+.grid-summativ {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+}
+
+
+.mobile-layout{
+    display: grid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+}
+
+.summativ-layout h3, .summativ-layout p {
+    margin: 0% 0% 0% 5%;
+}
+
+#summativ01 {
+    background-color: var(--Persian-red);
+    
+}
+
+#summativ02 {
+    background-color: var(--Emerald);
+
+}
+
+#summativ03 {
+    background-color: var(--Mustard);
+}
